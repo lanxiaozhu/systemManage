@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.moyu.core.user.dao.MyRoleDao">
+
+
+    <resultMap id="ResultMap"
+               extends="com.moyu.core.user.dao.mapper.MyMenuMapper.BaseResultMap"
+               type="com.moyu.core.user.domain.MyMenu">
+    </resultMap>
+
+    <select id="selectdMenu" resultMap="ResultMap">
+        SELECT <include refid="com.moyu.core.user.dao.mapper.MyMenuMapper.Base_Column_List"/> FROM `moyu_menu` moyu_menu where id in ( SELECT menu_id FROM `moyu_role_menu_relation` where role_id  = #{roleId} )
+    </select>
+
+
+</mapper>

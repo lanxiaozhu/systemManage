@@ -1,0 +1,20 @@
+package com.moyu.core.user.service;
+
+import com.alibaba.fastjson.JSONArray;
+import com.moyu.core.user.domain.MyRole;
+
+import java.util.List;
+
+/**
+ * @Auther: guoxianjun
+ * @Date: 2019/2/21 17:24
+ * @Description:
+ */
+public interface UserRoleRelationService {
+
+    Integer saveUserRoleRelation(JSONArray ids, Integer userId);
+
+    List<MyRole> selectdRole(Integer userId);
+
+    void putRoleRelation(JSONArray ids, Integer userId);
+}

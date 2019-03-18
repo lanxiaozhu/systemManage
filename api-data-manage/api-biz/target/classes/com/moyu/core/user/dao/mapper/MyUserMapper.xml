@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.moyu.core.user.dao.mapper.MyUserMapper">
+  <resultMap id="BaseResultMap" type="com.moyu.core.user.domain.MyUser">
+    <result column="moyu_user_id" jdbcType="INTEGER" property="id" />
+    <result column="moyu_user_login_name" jdbcType="VARCHAR" property="loginName" />
+    <result column="moyu_user_password" jdbcType="VARCHAR" property="password" />
+    <result column="moyu_user_real_name" jdbcType="VARCHAR" property="realName" />
+    <result column="moyu_user_phone_no" jdbcType="VARCHAR" property="phoneNo" />
+    <result column="moyu_user_lock_account" jdbcType="INTEGER" property="lockAccount" />
+    <result column="moyu_user_salt" jdbcType="VARCHAR" property="salt" />
+    <result column="moyu_user_address" jdbcType="VARCHAR" property="address" />
+    <result column="moyu_user_state" jdbcType="INTEGER" property="state" />
+    <result column="moyu_user_is_del" jdbcType="INTEGER" property="isDel" />
+    <result column="moyu_user_gtm_created" jdbcType="TIMESTAMP" property="gtmCreated" />
+    <result column="moyu_user_modify_created" jdbcType="TIMESTAMP" property="modifyCreated" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    moyu_user.id as moyu_user_id, moyu_user.login_name as moyu_user_login_name, moyu_user.password as moyu_user_password, 
+    moyu_user.real_name as moyu_user_real_name, moyu_user.phone_no as moyu_user_phone_no, 
+    moyu_user.lock_account as moyu_user_lock_account, moyu_user.salt as moyu_user_salt, 
+    moyu_user.address as moyu_user_address, moyu_user.state as moyu_user_state, moyu_user.is_del as moyu_user_is_del, 
+    moyu_user.gtm_created as moyu_user_gtm_created, moyu_user.modify_created as moyu_user_modify_created
+  </sql>
+  <select id="selectByExample" parameterType="com.moyu.core.user.domain.MyUserExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from moyu_user moyu_user
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <delete id="deleteByExample" parameterType="com.moyu.core.user.domain.MyUserExample">
+    delete from moyu_user moyu_user
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.moyu.core.user.domain.MyUser">
+    <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Integer">
+      SELECT LAST_INSERT_ID()
+    </selectKey>
+    insert into moyu_user (login_name, password, real_name, 
+      phone_no, lock_account, salt, 
+      address, state, is_del, 
+      gtm_created, modify_created)
+    values (#{loginName,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, #{realName,jdbcType=VARCHAR}, 
+      #{phoneNo,jdbcType=VARCHAR}, #{lockAccount,jdbcType=INTEGER}, #{salt,jdbcType=VARCHAR}, 
+      #{address,jdbcType=VARCHAR}, #{state,jdbcType=INTEGER}, #{isDel,jdbcType=INTEGER}, 
+      #{gtmCreated,jdbcType=TIMESTAMP}, #{modifyCreated,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.moyu.core.user.domain.MyUser">
+    <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Integer">
+      SELECT LAST_INSERT_ID()
+    </selectKey>
+    insert into moyu_user
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="loginName != null">
+        login_name,
+      </if>
+      <if test="password != null">
+        password,
+      </if>
+      <if test="realName != null">
+        real_name,
+      </if>
+      <if test="phoneNo != null">
+        phone_no,
+      </if>
+      <if test="lockAccount != null">
+        lock_account,
+      </if>
+      <if test="salt != null">
+        salt,
+      </if>
+      <if test="address != null">
+        address,
+      </if>
+      <if test="state != null">
+        state,
+      </if>
+      <if test="isDel != null">
+        is_del,
+      </if>
+      <if test="gtmCreated != null">
+        gtm_created,
+      </if>
+      <if test="modifyCreated != null">
+        modify_created,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="loginName != null">
+        #{loginName,jdbcType=VARCHAR},
+      </if>
+      <if test="password != null">
+        #{password,jdbcType=VARCHAR},
+      </if>
+      <if test="realName != null">
+        #{realName,jdbcType=VARCHAR},
+      </if>
+      <if test="phoneNo != null">
+        #{phoneNo,jdbcType=VARCHAR},
+      </if>
+      <if test="lockAccount != null">
+        #{lockAccount,jdbcType=INTEGER},
+      </if>
+      <if test="salt != null">
+        #{salt,jdbcType=VARCHAR},
+      </if>
+      <if test="address != null">
+        #{address,jdbcType=VARCHAR},
+      </if>
+      <if test="state != null">
+        #{state,jdbcType=INTEGER},
+      </if>
+      <if test="isDel != null">
+        #{isDel,jdbcType=INTEGER},
+      </if>
+      <if test="gtmCreated != null">
+        #{gtmCreated,jdbcType=TIMESTAMP},
+      </if>
+      <if test="modifyCreated != null">
+        #{modifyCreated,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.moyu.core.user.domain.MyUserExample" resultType="java.lang.Long">
+    select count(*) from moyu_user moyu_user
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update moyu_user moyu_user
+    <set>
+      <if test="record.id != null">
+        moyu_user.id = #{record.id,jdbcType=INTEGER},
+      </if>
+      <if test="record.loginName != null">
+        moyu_user.login_name = #{record.loginName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.password != null">
+        moyu_user.password = #{record.password,jdbcType=VARCHAR},
+      </if>
+      <if test="record.realName != null">
+        moyu_user.real_name = #{record.realName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.phoneNo != null">
+        moyu_user.phone_no = #{record.phoneNo,jdbcType=VARCHAR},
+      </if>
+      <if test="record.lockAccount != null">
+        moyu_user.lock_account = #{record.lockAccount,jdbcType=INTEGER},
+      </if>
+      <if test="record.salt != null">
+        moyu_user.salt = #{record.salt,jdbcType=VARCHAR},
+      </if>
+      <if test="record.address != null">
+        moyu_user.address = #{record.address,jdbcType=VARCHAR},
+      </if>
+      <if test="record.state != null">
+        moyu_user.state = #{record.state,jdbcType=INTEGER},
+      </if>
+      <if test="record.isDel != null">
+        moyu_user.is_del = #{record.isDel,jdbcType=INTEGER},
+      </if>
+      <if test="record.gtmCreated != null">
+        moyu_user.gtm_created = #{record.gtmCreated,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.modifyCreated != null">
+        moyu_user.modify_created = #{record.modifyCreated,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update moyu_user moyu_user
+    set moyu_user.id = #{record.id,jdbcType=INTEGER},
+      moyu_user.login_name = #{record.loginName,jdbcType=VARCHAR},
+      moyu_user.password = #{record.password,jdbcType=VARCHAR},
+      moyu_user.real_name = #{record.realName,jdbcType=VARCHAR},
+      moyu_user.phone_no = #{record.phoneNo,jdbcType=VARCHAR},
+      moyu_user.lock_account = #{record.lockAccount,jdbcType=INTEGER},
+      moyu_user.salt = #{record.salt,jdbcType=VARCHAR},
+      moyu_user.address = #{record.address,jdbcType=VARCHAR},
+      moyu_user.state = #{record.state,jdbcType=INTEGER},
+      moyu_user.is_del = #{record.isDel,jdbcType=INTEGER},
+      moyu_user.gtm_created = #{record.gtmCreated,jdbcType=TIMESTAMP},
+      moyu_user.modify_created = #{record.modifyCreated,jdbcType=TIMESTAMP}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+</mapper>

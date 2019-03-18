@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.moyu.core.user.dao.mapper.MyRoleMapper">
+  <resultMap id="BaseResultMap" type="com.moyu.core.user.domain.MyRole">
+    <result column="moyu_role_id" jdbcType="INTEGER" property="id" />
+    <result column="moyu_role_role_name" jdbcType="VARCHAR" property="roleName" />
+    <result column="moyu_role_description" jdbcType="VARCHAR" property="description" />
+    <result column="moyu_role_is_del" jdbcType="INTEGER" property="isDel" />
+    <result column="moyu_role_gtm_created" jdbcType="TIMESTAMP" property="gtmCreated" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    moyu_role.id as moyu_role_id, moyu_role.role_name as moyu_role_role_name, moyu_role.description as moyu_role_description, 
+    moyu_role.is_del as moyu_role_is_del, moyu_role.gtm_created as moyu_role_gtm_created
+  </sql>
+  <select id="selectByExample" parameterType="com.moyu.core.user.domain.MyRoleExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from moyu_role moyu_role
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <delete id="deleteByExample" parameterType="com.moyu.core.user.domain.MyRoleExample">
+    delete from moyu_role moyu_role
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.moyu.core.user.domain.MyRole">
+    <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Integer">
+      SELECT LAST_INSERT_ID()
+    </selectKey>
+    insert into moyu_role (role_name, description, is_del, 
+      gtm_created)
+    values (#{roleName,jdbcType=VARCHAR}, #{description,jdbcType=VARCHAR}, #{isDel,jdbcType=INTEGER}, 
+      #{gtmCreated,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.moyu.core.user.domain.MyRole">
+    <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Integer">
+      SELECT LAST_INSERT_ID()
+    </selectKey>
+    insert into moyu_role
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="roleName != null">
+        role_name,
+      </if>
+      <if test="description != null">
+        description,
+      </if>
+      <if test="isDel != null">
+        is_del,
+      </if>
+      <if test="gtmCreated != null">
+        gtm_created,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="roleName != null">
+        #{roleName,jdbcType=VARCHAR},
+      </if>
+      <if test="description != null">
+        #{description,jdbcType=VARCHAR},
+      </if>
+      <if test="isDel != null">
+        #{isDel,jdbcType=INTEGER},
+      </if>
+      <if test="gtmCreated != null">
+        #{gtmCreated,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.moyu.core.user.domain.MyRoleExample" resultType="java.lang.Long">
+    select count(*) from moyu_role moyu_role
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update moyu_role moyu_role
+    <set>
+      <if test="record.id != null">
+        moyu_role.id = #{record.id,jdbcType=INTEGER},
+      </if>
+      <if test="record.roleName != null">
+        moyu_role.role_name = #{record.roleName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.description != null">
+        moyu_role.description = #{record.description,jdbcType=VARCHAR},
+      </if>
+      <if test="record.isDel != null">
+        moyu_role.is_del = #{record.isDel,jdbcType=INTEGER},
+      </if>
+      <if test="record.gtmCreated != null">
+        moyu_role.gtm_created = #{record.gtmCreated,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update moyu_role moyu_role
+    set moyu_role.id = #{record.id,jdbcType=INTEGER},
+      moyu_role.role_name = #{record.roleName,jdbcType=VARCHAR},
+      moyu_role.description = #{record.description,jdbcType=VARCHAR},
+      moyu_role.is_del = #{record.isDel,jdbcType=INTEGER},
+      moyu_role.gtm_created = #{record.gtmCreated,jdbcType=TIMESTAMP}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+</mapper>

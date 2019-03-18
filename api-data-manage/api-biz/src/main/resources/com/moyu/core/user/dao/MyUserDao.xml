@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.moyu.core.user.dao.MyUserDao">
+
+    <!-- 批量删除操作  -->
+    <delete id="deleteUserByIds" parameterType="java.util.List">
+        delete from moyu_user where id in
+        <foreach collection="ids" index="index" item="item" open="(" close=")" separator=",">
+            #{item}
+        </foreach>
+    </delete>
+
+    <resultMap id="ResultMap"
+               extends="com.moyu.core.user.dao.mapper.MyRoleMapper.BaseResultMap"
+               type="com.moyu.core.user.domain.MyRole">
+    </resultMap>
+
+    <select id="selectdRole" resultMap="ResultMap">
+        SELECT <include refid="com.moyu.core.user.dao.mapper.MyRoleMapper.Base_Column_List"/> FROM `moyu_role` moyu_role where id in ( SELECT role_id FROM `moyu_user_role_relation` where user_id  = #{userId} )
+    </select>
+
+    <delete id="deleteRoleRelationByUserId">
+        delete from moyu_user_role_relation where user_id  = #{userId}
+    </delete>
+</mapper>
