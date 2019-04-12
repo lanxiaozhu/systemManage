@@ -6,25 +6,19 @@
         <ul>
           <li>基于 Spring Boot、Spring Cloud、Vue、Element 的 Java EE 快速开发平台</li>
           <li>旨在提供一套简洁易用的解决方案，帮助用户有效降低项目开发难度和成本</li>
-          <li>博客提供项目开发过程同步系列教程文章，手把手的教你如何开发同类系统</li>
+          <li>我日找工作寒冬</li>
         </ul>
         <div><img src="@/assets/pyz.jpg" style="width:200px;height:120px;padding-top:15px;" /></div>
       </el-carousel-item>
       <el-carousel-item class="carousel-item-func">
         <h2>功能计划</h2>
         <ul>
-          <li>✔ 系统登录：系统用户登录，系统登录认证（token方式）</li>
+          <li>✔ 系统登录：爱谁谁吧</li>
           <li>✔ 用户管理：新建用户，修改用户，删除用户，查询用户</li>
           <li>✔ 机构管理：新建机构，修改机构，删除机构，查询机构</li>
           <li>✔ 角色管理：新建角色，修改角色，删除角色，查询角色</li>
           <li>✔ 菜单管理：新建菜单，修改菜单，删除菜单，查询菜单</li>
           <li>✔ 系统日志：记录用户操作日志，查看系统执行日志记录</li>
-          <li>✔ 数据监控：定制Druid信息，提供简洁有效的SQL监控</li>
-          <li>✔ 聚合文档：定制在线文档，提供简洁美观的API文档</li>
-          <li>✔ 备份还原：系统备份还原，一键恢复系统初始化数据</li>
-          <li>✔ 主题切换：支持主题切换，自定主题颜色，一键换肤</li>
-          <li>✔ 服务治理：集成Spring Cloud，实现全方位服务治理</li>
-          <li>✔ 服务监控：集成Spring Boot Admin，实现微服务监控</li>
           <li>...</li>
         </ul>
       </el-carousel-item>

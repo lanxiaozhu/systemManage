@@ -92,10 +92,10 @@ public class ShiroConfig {
         //拦截器
         Map<String, String> filterChainDefinitionMap = new LinkedHashMap<>();//LinkedHashMap 同样是一个HashMap,不过内部实现了 双向链表结构，可以保证顺序
         //2.退出登陆
-        filterChainDefinitionMap.put("/login/logout", "logout");
+        filterChainDefinitionMap.put("/login/logout", "anon");
         filterChainDefinitionMap.put("/api/**", "anon");
         //3.其他所有路径都会被拦截  authc
-        //filterChainDefinitionMap.put("/**", "authc");
+        filterChainDefinitionMap.put("/**", "authc");
 
         //注册自己 定义definition chain约束
         shiroFilterFactoryBean.setFilterChainDefinitionMap(filterChainDefinitionMap);
@@ -118,6 +118,8 @@ public class ShiroConfig {
 
     /**
      * 开启Shiro的注解(如@RequiresRoles,@RequiresPermissions),
+     *  @RequiresPermissions("user:add")
+     *  @RequiresRoles({"vip"})
      * 需借助SpringAOP扫描使用Shiro注解的类,并在必要时进行安全逻辑验证
      * 配置以下两个bean即可实现此功能
      */

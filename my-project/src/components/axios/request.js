@@ -1,5 +1,6 @@
 import axios from "axios";
-import {MessageBox} from 'element-ui' /*引入elementUi */// 2、所有的页面路由到此
+import router from '@/router'
+import {MessageBox,Notification} from 'element-ui' /*引入elementUi */// 2、所有的页面路由到此
 
 /* 创建实例、 */
 const service = axios.create({
@@ -33,6 +34,16 @@ service.interceptors.response.use(
             }
         })
        }
+       if(response.data.code == '999'){
+        Notification.error({
+            title: '抱歉',
+            message: '您没有权限进入，请联系管理员',
+            duration: 3000
+          });
+        router.replace({
+            path: '/noPermission',
+        })
+    }
         return Promise.resolve(response)
 
     },

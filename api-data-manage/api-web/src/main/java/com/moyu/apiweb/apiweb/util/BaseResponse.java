@@ -1,7 +1,12 @@
 package com.moyu.apiweb.apiweb.util;
 
 import com.alibaba.fastjson.JSON;
+import com.moyu.core.user.domain.MyUser;
 import org.apache.commons.lang.StringUtils;
+import org.apache.shiro.SecurityUtils;
+import org.apache.shiro.authz.AuthorizationInfo;
+import org.apache.shiro.subject.PrincipalCollection;
+import org.apache.shiro.subject.Subject;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -12,6 +17,13 @@ import java.util.Map;
  * @Description: 公共响应结果类
  */
 public class BaseResponse {
+
+    protected MyUser getUserInfo() {
+        Subject subject = SecurityUtils.getSubject();
+        MyUser myUser = (MyUser) subject.getPrincipal();
+        return myUser;
+    }
+
 
     public String successJsonResult(Object data,Object page,String msg) {
         Map<String, Object> result = new HashMap<String, Object>();

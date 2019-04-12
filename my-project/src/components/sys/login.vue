@@ -41,6 +41,7 @@ export default {
             this.userToken = response.data.sessionId
             console.log('获取到的token;' + this.userToken)// 获取到的token
 
+          localStorage.setItem('userName', response.data.userName);
            _this.changeLogin({ Authorization: this.userToken });
             this.$router.push('/intro')
           } else {
@@ -55,16 +56,9 @@ export default {
   }
 }
 </script>
-<style>
-body {
-  text-align: center; /*全部内容居中*/
-  background-color: #2d3a4b;
-  width: 100%;
-  height: 100%;
-  /*background-image:url(../../assets/back.jpg);
-     background-repeat:no-repeat;
-     background-size:100%;/*这样设置图片就不会随屏幕缩放而改变了。（推荐）*/
-}
+
+<style scoped>
+/* scoped 当前页面生效 */
 .login {
   width: 400px;
   margin: 120px auto 40px auto;

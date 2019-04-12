@@ -13,6 +13,9 @@ import roleManage from '@/components/page/systemManage/roleManage'
 import sysParam from '@/components/page/systemManage/sysParam'
 import userManage from '@/components/page/systemManage/userManage'
 
+//异常页面
+import noPermission from '@/components/sys/error/noPermission'
+
 
 Vue.use(Router)
 
@@ -68,7 +71,12 @@ const router =   new Router({
           path: '/userManage',
           name: 'userManage',
           component: userManage
-        }
+        },
+        {
+          path: '/noPermission',
+          name: 'noPermission',
+          component: noPermission,
+        },
       ]
    },
     

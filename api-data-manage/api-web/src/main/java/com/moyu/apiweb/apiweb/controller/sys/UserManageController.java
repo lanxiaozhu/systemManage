@@ -4,6 +4,8 @@ import com.github.pagehelper.PageInfo;
 import com.moyu.apiweb.apiweb.util.BaseResponse;
 import com.moyu.core.user.domain.MyUser;
 import com.moyu.core.user.service.UserManageService;
+import org.apache.shiro.authz.annotation.RequiresPermissions;
+import org.apache.shiro.authz.annotation.RequiresRoles;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,6 +28,7 @@ public class UserManageController extends BaseResponse {
      * 获取用户列表
      * @return
      */
+    @RequiresRoles("admin")
     @GetMapping("/userManage")
     public String userManage(String name,Integer page,Integer size){
         List<MyUser> all = userManageService.findAll(name,page,size);

@@ -130,10 +130,8 @@
 </style>
 
 <script>
-  import {
-    success,
-    warning
-  } from '../../js/systemManage/alert.js'
+//消息提示
+  import { success, warning } from '../../js/systemManage/alert.js'
   // qs 类似于JSON.stringify转换格式的一种方法
   import qs from 'qs'
   import {

@@ -11,7 +11,7 @@
  Target Server Version : 80015
  File Encoding         : 65001
 
- Date: 18/03/2019 16:42:31
+ Date: 12/04/2019 18:19:55
 */
 
 SET NAMES utf8mb4;
@@ -34,22 +34,25 @@ CREATE TABLE `moyu_menu`  (
   `is_del` int(11) NULL DEFAULT 0,
   `gtm_created` datetime(0) NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 13 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '菜单表' ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 19 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '菜单表' ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of moyu_menu
 -- ----------------------------
-INSERT INTO `moyu_menu` VALUES (1, 0, '系统菜单', 'main', '', 'main', 0, 'el-icon-menu', 0, 0, '2019-01-24 08:35:46');
-INSERT INTO `moyu_menu` VALUES (2, 1, '商品管理', 'web', NULL, NULL, 1, 'el-icon-goods', 1, 0, '2019-01-24 08:36:13');
-INSERT INTO `moyu_menu` VALUES (3, 1, '系统管理', 'web', NULL, NULL, 1, 'el-icon-setting', 2, 0, '2019-01-24 08:38:51');
-INSERT INTO `moyu_menu` VALUES (4, 1, '日志数据', 'web', NULL, '', 1, 'el-icon-message', 3, 0, '2019-01-24 08:39:56');
-INSERT INTO `moyu_menu` VALUES (5, 2, '产品引进', 'web', NULL, '/productBring', 2, 'el-icon-d-arrow-right', 4, 0, '2019-01-24 08:40:00');
-INSERT INTO `moyu_menu` VALUES (6, 2, '产品阅览', 'web', NULL, '/productRead', 2, 'el-icon-d-arrow-right', 5, 0, '2019-01-24 08:40:50');
-INSERT INTO `moyu_menu` VALUES (7, 2, '产品订购', 'web', NULL, '/productReserve', 2, 'el-icon-d-arrow-right', 6, 0, '2019-01-24 08:41:00');
-INSERT INTO `moyu_menu` VALUES (8, 3, '用户管理', 'web', NULL, '/userManage', 2, 'el-icon-d-arrow-right', 7, 0, '2019-01-24 08:41:09');
-INSERT INTO `moyu_menu` VALUES (9, 3, '角色管理', 'web', NULL, '/roleManage', 2, 'el-icon-d-arrow-right', 8, 0, '2019-01-24 08:41:12');
-INSERT INTO `moyu_menu` VALUES (10, 3, '菜单管理', 'web', NULL, '/menuManage', 2, 'el-icon-d-arrow-right', 9, 0, '2019-01-24 08:41:18');
-INSERT INTO `moyu_menu` VALUES (11, 3, '系统参数', 'web', NULL, '/sysParam', 2, 'el-icon-d-arrow-right', 10, 0, '2019-03-16 12:59:48');
+INSERT INTO `moyu_menu` VALUES (1, 0, '系统菜单', 'main', 'sys', 'main', 0, 'el-icon-menu', 0, 0, '2019-01-24 08:35:46');
+INSERT INTO `moyu_menu` VALUES (2, 1, '商品管理', 'web', 'product', NULL, 1, 'el-icon-goods', 1, 0, '2019-01-24 08:36:13');
+INSERT INTO `moyu_menu` VALUES (3, 1, '系统管理', 'web', 'system', NULL, 1, 'el-icon-setting', 2, 0, '2019-01-24 08:38:51');
+INSERT INTO `moyu_menu` VALUES (4, 1, '日志数据', 'web', 'log', '', 1, 'el-icon-message', 3, 0, '2019-01-24 08:39:56');
+INSERT INTO `moyu_menu` VALUES (5, 2, '产品引进', 'web', 'product:bring', '/productBring', 2, 'el-icon-d-arrow-right', 4, 0, '2019-01-24 08:40:00');
+INSERT INTO `moyu_menu` VALUES (6, 2, '产品阅览', 'web', 'product:read', '/productRead', 2, 'el-icon-d-arrow-right', 5, 0, '2019-01-24 08:40:50');
+INSERT INTO `moyu_menu` VALUES (7, 2, '产品订购', 'web', 'product:reserve', '/productReserve', 2, 'el-icon-d-arrow-right', 6, 0, '2019-01-24 08:41:00');
+INSERT INTO `moyu_menu` VALUES (8, 3, '用户管理', 'web', 'user:sys', '/userManage', 2, 'el-icon-d-arrow-right', 7, 0, '2019-01-24 08:41:09');
+INSERT INTO `moyu_menu` VALUES (9, 3, '角色管理', 'web', 'role:sys', '/roleManage', 2, 'el-icon-d-arrow-right', 8, 0, '2019-01-24 08:41:12');
+INSERT INTO `moyu_menu` VALUES (10, 3, '菜单管理', 'web', 'menu:sys', '/menuManage', 2, 'el-icon-d-arrow-right', 9, 0, '2019-01-24 08:41:18');
+INSERT INTO `moyu_menu` VALUES (11, 3, '系统参数', 'web', 'sys:param', '/sysParam', 2, 'el-icon-d-arrow-right', 10, 0, '2019-03-16 12:59:48');
+INSERT INTO `moyu_menu` VALUES (16, 1, '应用模板', '1', 'sys:applicationTemplate', '/applicationTemplate', 1, 'el-icon-news', 4, 0, '2019-04-11 03:56:19');
+INSERT INTO `moyu_menu` VALUES (17, 16, '模板', '2', '', '', 2, 'el-icon-tickets', 11, 0, '2019-04-11 03:56:58');
+INSERT INTO `moyu_menu` VALUES (18, 16, '策略', '2', NULL, NULL, 2, 'el-icon-d-arrow-right', NULL, 0, '2019-04-11 06:34:47');
 
 -- ----------------------------
 -- Table structure for moyu_role
@@ -62,7 +65,7 @@ CREATE TABLE `moyu_role`  (
   `is_del` int(11) NOT NULL,
   `gtm_created` datetime(0) NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 8 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '角色表' ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 13 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '角色表' ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of moyu_role
@@ -83,18 +86,30 @@ CREATE TABLE `moyu_role_menu_relation`  (
   `role_id` int(8) NULL DEFAULT NULL,
   `menu_id` int(8) NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '角色菜单关系' ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 31 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '角色菜单关系' ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of moyu_role_menu_relation
 -- ----------------------------
-INSERT INTO `moyu_role_menu_relation` VALUES (1, 13, 4);
-INSERT INTO `moyu_role_menu_relation` VALUES (5, 12, 3);
-INSERT INTO `moyu_role_menu_relation` VALUES (6, 12, 8);
-INSERT INTO `moyu_role_menu_relation` VALUES (7, 12, 9);
-INSERT INTO `moyu_role_menu_relation` VALUES (8, 12, 10);
-INSERT INTO `moyu_role_menu_relation` VALUES (9, 12, 11);
-INSERT INTO `moyu_role_menu_relation` VALUES (10, 12, 4);
+INSERT INTO `moyu_role_menu_relation` VALUES (11, 8, 1);
+INSERT INTO `moyu_role_menu_relation` VALUES (12, 8, 2);
+INSERT INTO `moyu_role_menu_relation` VALUES (13, 8, 3);
+INSERT INTO `moyu_role_menu_relation` VALUES (15, 8, 5);
+INSERT INTO `moyu_role_menu_relation` VALUES (16, 8, 6);
+INSERT INTO `moyu_role_menu_relation` VALUES (17, 8, 7);
+INSERT INTO `moyu_role_menu_relation` VALUES (18, 8, 8);
+INSERT INTO `moyu_role_menu_relation` VALUES (19, 8, 9);
+INSERT INTO `moyu_role_menu_relation` VALUES (20, 8, 10);
+INSERT INTO `moyu_role_menu_relation` VALUES (22, 8, 4);
+INSERT INTO `moyu_role_menu_relation` VALUES (23, 8, 11);
+INSERT INTO `moyu_role_menu_relation` VALUES (24, 8, 16);
+INSERT INTO `moyu_role_menu_relation` VALUES (25, 8, 17);
+INSERT INTO `moyu_role_menu_relation` VALUES (26, 10, 4);
+INSERT INTO `moyu_role_menu_relation` VALUES (27, 10, 5);
+INSERT INTO `moyu_role_menu_relation` VALUES (28, 10, 6);
+INSERT INTO `moyu_role_menu_relation` VALUES (29, 9, 3);
+INSERT INTO `moyu_role_menu_relation` VALUES (30, 9, 8);
+INSERT INTO `moyu_role_menu_relation` VALUES (31, 9, 9);
 
 -- ----------------------------
 -- Table structure for moyu_user
@@ -114,7 +129,7 @@ CREATE TABLE `moyu_user`  (
   `gtm_created` datetime(0) NULL DEFAULT CURRENT_TIMESTAMP,
   `modify_created` datetime(0) NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 15 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '用户表' ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 28 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '用户表' ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of moyu_user
@@ -150,14 +165,12 @@ CREATE TABLE `moyu_user_role_relation`  (
   `user_id` int(11) NULL DEFAULT NULL,
   `role_id` int(11) NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '用户权限关系' ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 13 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '用户权限关系' ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of moyu_user_role_relation
 -- ----------------------------
-INSERT INTO `moyu_user_role_relation` VALUES (7, 26, 8);
-INSERT INTO `moyu_user_role_relation` VALUES (8, 26, 9);
-INSERT INTO `moyu_user_role_relation` VALUES (11, 27, 8);
-INSERT INTO `moyu_user_role_relation` VALUES (12, 27, 9);
+INSERT INTO `moyu_user_role_relation` VALUES (7, 1, 8);
+INSERT INTO `moyu_user_role_relation` VALUES (13, 26, 9);
 
 SET FOREIGN_KEY_CHECKS = 1;

@@ -1,8 +1,11 @@
 package com.moyu.apiweb.apiweb;
 
+import com.moyu.apiweb.apiweb.springBena.OrderConfig;
+import com.moyu.apiweb.apiweb.springBena.Teacher;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.*;
@@ -12,27 +15,25 @@ import java.util.stream.Collectors;
 @SpringBootTest
 public class ApiWebApplicationTests {
     @Test
-    public void test1(){
-        List<Integer> list1=new ArrayList<>();
+    public void test1() {
+        List<Integer> list1 = new ArrayList<>();
         list1.add(1);
         list1.add(2);
         list1.add(3);
 
-        List<Integer> list2=new ArrayList<>();
+        List<Integer> list2 = new ArrayList<>();
         list2.add(3);
         list2.add(4);
         list2.add(5);
 
         System.out.println("====求交集===");
 
-        List<Integer> list=list1.stream().filter(t->list2.contains(t)).collect(Collectors.toList());
+        List<Integer> list = list1.stream().filter(t -> list2.contains(t)).collect(Collectors.toList());
         list.stream().forEach(System.out::println);
 
 
-
-
         System.out.println("====求差集===");
-        list=list1.stream().filter(t-> !list2.contains(t)).collect(Collectors.toList());
+        list = list1.stream().filter(t -> !list2.contains(t)).collect(Collectors.toList());
         list.stream().forEach(System.out::println);
 
 
@@ -40,39 +41,38 @@ public class ApiWebApplicationTests {
 
         list.addAll(list1);
         list.addAll(list2);
-        list=list.stream().distinct().collect(Collectors.toList());
+        list = list.stream().distinct().collect(Collectors.toList());
         list.stream().forEach(System.out::println);
     }
+
     @Test
     public void contextLoads() {
-        Set<String> sets = new HashSet<>();
-        sets.add("哥哥");
-        sets.add("爸爸");
-        sets.add("伯伯");
 
-        Set<String> setr = new HashSet<>();
-        sets.add("中兴");
-        sets.add("银行");
+        Map map = new HashMap();
 
-        String rs = "XXX爸爸";
+        map.put("1","1");
+        map.put("2","1");
+        map.put("3","1");
+        map.put("4","1");
+        map.put("5","1");
+        map.put("6","1");
+        map.put("7","1");
+        map.put("8","1");
+        map.put("9","10");
+        map.put("10","1");
+        map.put("11","1");
+        map.put("12","1");
+        map.put("13","1");
+        map.put("14","1");
 
-        //对比 是否 包含 亲属！true
-        //过滤亲属
-       sets.stream().filter(item -> {
-            if(item.contains(rs)){
-                System.out.println("亲属"+rs);
-            }
-            return true;
-        }).collect(Collectors.toSet());
-       //过滤掉分控
-        setr.stream().filter(item -> {
-            if(rs.contains(item)){
-                System.out.println("风控"+rs);
-            }
-            return true;
-        }).collect(Collectors.toSet());
-        //剩余普通
+
 
     }
 
+    @Test
+    public void testBean(){
+        AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext(OrderConfig.class);
+        Teacher rice = ac.getBean(Teacher.class);
+        //resource  get全局搜搜我
+    }
 }

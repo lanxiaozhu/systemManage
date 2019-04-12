@@ -8,7 +8,7 @@ import 'element-ui/lib/theme-chalk/index.css' /*引入elementUi */
 import axios from 'axios'
 import VueAxios from 'vue-axios'
 import store from '@/components/store'
-import moment from 'moment' //日期格式化 
+import moment from 'moment' //表格中的时间格式化
 
 
 
@@ -19,6 +19,7 @@ axios.defaults.baseURL = "http://127.0.0.1:8088/" ; // 关键步骤–填写后�
 
 Vue.config.productionTip = false
 
+//表格中的时间格式化
 Vue.filter('dateformat', function(dataStr, pattern = 'YYYY-MM-DD HH:mm:ss') {
   return moment(dataStr).format(pattern)
 })

@@ -28,7 +28,7 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(HttpRequestMethodNotSupportedException.class)
     public JSONObject httpRequestMethodHandler() throws Exception {
         JSONObject jsonObject = new JSONObject();
-        jsonObject.put("returnCode", "500");
+        jsonObject.put("code", "998");
         jsonObject.put("returnMsg", "请求方式有误");
         return jsonObject;
     }
@@ -44,14 +44,14 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(UnauthorizedException.class)
     public JSONObject unauthorizedExceptionHandler() throws Exception {
         JSONObject jsonObject = new JSONObject();
-        jsonObject.put("returnCode", "500");
+        jsonObject.put("code", "999");
         jsonObject.put("returnMsg", "权限不足");
         return jsonObject;
     }
 
     /**
      * 未登录报错拦截
-     * 在请求需要权限的接口,而连登录都还没登录的时候,会报此错
+     * 在请求需要权限的接口,而连登录都还没登录的时候,会报此错  暂时用不到
      *
      * @return
      * @throws Exception
@@ -59,7 +59,7 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(UnauthenticatedException.class)
     public JSONObject unauthenticatedException() throws Exception {
         JSONObject jsonObject = new JSONObject();
-        jsonObject.put("returnCode", "500");
+        jsonObject.put("code", "400");
         jsonObject.put("returnMsg", "未登录");
         return jsonObject;
     }

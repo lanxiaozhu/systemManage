@@ -1,25 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.moyu.core.user.dao.MyMenuDao">
-  <resultMap id="ExtBaseResultMap" type="com.moyu.core.user.model.MyMenuModel" extends="com.moyu.core.user.dao.mapper.MyMenuMapper.BaseResultMap">
-    <collection property="menuList" ofType="com.moyu.core.user.domain.MyMenu"
-                column="moyu_menu_id" select="findMenuByParentId"/>
-  </resultMap>
+    <resultMap id="ExtBaseResultMap" type="com.moyu.core.user.model.MyMenuModel"
+               extends="com.moyu.core.user.dao.mapper.MyMenuMapper.BaseResultMap">
+        <collection property="menuList" ofType="com.moyu.core.user.domain.MyMenu"
+                    column="moyu_menu_id" select="findMenuByParentId"/>
+    </resultMap>
 
-  <!--一级菜单-->
-  <select id="selectAll" resultMap="ExtBaseResultMap">
-        SELECT  <include refid="com.moyu.core.user.dao.mapper.MyMenuMapper.Base_Column_List"/> FROM moyu_menu where
-      <if test="ids==1">
-          menu_lever = 1
-      </if>
-      <if test="ids==2">
-          menu_lever = 0
-      </if>
-          order by sort
+    <!--一级菜单-->
+    <select id="selectAll" resultMap="ExtBaseResultMap">
+        SELECT
+        <include refid="com.moyu.core.user.dao.mapper.MyMenuMapper.Base_Column_List"/>
+        FROM moyu_menu where
+        <if test="ids==1">
+            menu_lever = 1
+        </if>
+        <if test="ids==2">
+            menu_lever = 0
+        </if>
+        order by sort
     </select>
-  <!--二级菜单-->
-  <select id="findMenuByParentId" parameterType="java.lang.Integer" resultMap="ExtBaseResultMap">
-        SELECT <include refid="com.moyu.core.user.dao.mapper.MyMenuMapper.Base_Column_List"/> from moyu_menu where parent_id = #{value}  order by sort
-  </select>
+    <!--二级菜单-->
+    <select id="findMenuByParentId" parameterType="java.lang.Integer" resultMap="ExtBaseResultMap">
+        SELECT
+        <include refid="com.moyu.core.user.dao.mapper.MyMenuMapper.Base_Column_List"/>
+        from moyu_menu where parent_id = #{value} order by sort
+    </select>
 
+
+    <!--一级菜单-->
+    <select id="selectAlls" resultMap="ExtBaseResultMap">
+        SELECT
+        <include refid="com.moyu.core.user.dao.mapper.MyMenuMapper.Base_Column_List"/>
+        FROM moyu_menu where
+        menu_lever = 1
+        <if test="ids.size() > 0">
+            and id in
+            <foreach collection="ids" index="index" item="item" open="(" close=")" separator=",">
+                #{item}
+            </foreach>
+        </if>
+        order by sort
+    </select>
+    <!--二级菜单-->
+    <select id="findMenuByParentIds" resultMap="com.moyu.core.user.dao.mapper.MyMenuMapper.BaseResultMap">
+        SELECT
+        <include refid="com.moyu.core.user.dao.mapper.MyMenuMapper.Base_Column_List"/>
+        from moyu_menu
+        where parent_id = #{id}
+        <if test="ids.size() > 0">
+            and id in
+            <foreach collection="ids" index="index" item="item" open="(" close=")" separator=",">
+                #{item}
+            </foreach>
+        </if>
+        order by sort
+    </select>
 </mapper>

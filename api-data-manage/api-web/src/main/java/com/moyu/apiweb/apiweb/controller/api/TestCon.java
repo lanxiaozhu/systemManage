@@ -4,6 +4,7 @@ import okhttp3.FormBody;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
+import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -12,10 +13,9 @@ import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.math.BigInteger;
 import java.security.MessageDigest;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.LinkedBlockingQueue;
 
 /**
  * @Auther: guoxianjun
@@ -26,10 +26,12 @@ import java.util.Set;
 @RequestMapping("/api")
 public class TestCon {
 
+
     private static OkHttpClient mHttpClient = new OkHttpClient.Builder().build();
 
     @GetMapping("/q")
     public String q() throws IOException {
+
         //map 封装参数
         Map<String, Object> params = new HashMap<>();
         params.put("name", "name");

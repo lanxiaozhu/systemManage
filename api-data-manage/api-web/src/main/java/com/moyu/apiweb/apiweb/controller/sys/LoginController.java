@@ -2,7 +2,9 @@ package com.moyu.apiweb.apiweb.controller.sys;
 
 import com.alibaba.fastjson.JSONObject;
 import com.moyu.apiweb.apiweb.shiro.MyShiroRealm;
+import com.moyu.apiweb.apiweb.util.BaseResponse;
 import com.moyu.core.user.domain.MyUser;
+import com.moyu.core.user.service.LoginService;
 import com.moyu.util.StrinUtil;
 import com.moyu.util.WebUtil;
 import org.apache.shiro.SecurityUtils;
@@ -10,9 +12,11 @@ import org.apache.shiro.authc.ExcessiveAttemptsException;
 import org.apache.shiro.authc.IncorrectCredentialsException;
 import org.apache.shiro.authc.UnknownAccountException;
 import org.apache.shiro.authc.UsernamePasswordToken;
+import org.apache.shiro.session.Session;
 import org.apache.shiro.subject.Subject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -29,8 +33,11 @@ import java.util.Objects;
  */
 @RestController
 @RequestMapping("/login")
-public class LoginController {
+public class LoginController extends BaseResponse {
     private final static Logger logger = LoggerFactory.getLogger(LoginController.class);
+
+    @Autowired
+    private LoginService loginService;
 
     @PostMapping("/auth")
     public Map auth(@RequestBody JSONObject jsonObject, HttpServletRequest request){
@@ -48,8 +55,12 @@ public class LoginController {
         Subject subject = SecurityUtils.getSubject();
         try {
             subject.login(token);
-            map.put("sessionId",subject.getSession().getId());
 
+            Session session = subject.getSession();
+//            session.setTimeout(3000); 超时时间
+
+            map.put("sessionId",session.getId());
+            map.put("userName",getUserInfo().getRealName());
 
             String remoteIP = WebUtil.getRemoteIP(request);
             String ipAddress = WebUtil.getIpAddress(remoteIP);

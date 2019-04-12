@@ -1,11 +1,16 @@
 package com.moyu.apiweb.apiweb.shiro;
 
+import com.moyu.core.user.domain.MyMenu;
+import com.moyu.core.user.domain.MyRole;
 import com.moyu.core.user.domain.MyUser;
 import com.moyu.core.user.service.LoginService;
+import com.moyu.core.user.service.RoleMenuRelationService;
+import com.moyu.core.user.service.UserRoleRelationService;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.*;
 import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.authz.SimpleAuthorizationInfo;
+import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.apache.shiro.realm.AuthorizingRealm;
 import org.apache.shiro.subject.PrincipalCollection;
 import org.slf4j.Logger;
@@ -13,6 +18,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 
@@ -30,6 +36,11 @@ public class MyShiroRealm extends AuthorizingRealm {
     @Autowired
     private LoginService loginService;
 
+    @Autowired
+    private UserRoleRelationService userRoleRelationService;
+
+    @Autowired
+    private RoleMenuRelationService roleMenuRelationService;
     /**
      * 链接配置了相应的权限或者shiro标签才会执行此方法否则不会执行
      * 简单的身份认证没有权限的控制的话，那么这个方法可以不进行实现，直接返回null即可
@@ -44,10 +55,24 @@ public class MyShiroRealm extends AuthorizingRealm {
         SimpleAuthorizationInfo authorizationInfo = new SimpleAuthorizationInfo();
         MyUser userInfo = (MyUser) principalCollection.getPrimaryPrincipal();
 
-        authorizationInfo.setRoles(getRolesByUserName());
-        authorizationInfo.setStringPermissions(getPermissionByUserName());
+        //1、获取角色信息
+        List<MyRole> myRoles = userRoleRelationService.selectdRole(userInfo.getId());
+        for (MyRole role: myRoles) {
+            //1.1授权 authorization 添加角色名称集合
+            authorizationInfo.addRole(role.getRoleName());
 
-    /*    for(SysRole role:userInfo.getRoles()){
+            //2、获取权限信息
+            List<MyMenu> myMenus = roleMenuRelationService.selectdMenu(role.getId());
+            for (MyMenu menu: myMenus) {
+                //2.2添加权限集合
+                authorizationInfo.addStringPermission(menu.getPermissionCode());
+            }
+
+        }
+        /*authorizationInfo.setRoles(getRolesByUserName());
+        authorizationInfo.setStringPermissions(getPermissionByUserName());*/
+
+       /* for(SysRole role:userInfo.getRoles()){
             //授权 authorization 添加角色名称集合
             authorizationInfo.addRole(role.getRoleName());
             for(Menu p:role.getMenus()){
@@ -58,7 +83,7 @@ public class MyShiroRealm extends AuthorizingRealm {
         return authorizationInfo;
     }
 
-    private Set<String> getPermissionByUserName() {
+   /* private Set<String> getPermissionByUserName() {
         Set<String> sets = new HashSet<>();
         sets.add("user:delete");
         sets.add("user:add");
@@ -70,7 +95,7 @@ public class MyShiroRealm extends AuthorizingRealm {
         sets.add("admin");
         sets.add("user");
         return sets;
-    }
+    }*/
 
     /**
      * 用户认证
