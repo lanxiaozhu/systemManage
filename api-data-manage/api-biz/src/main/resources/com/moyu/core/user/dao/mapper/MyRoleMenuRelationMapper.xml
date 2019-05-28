@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.moyu.core.user.dao.mapper.MyRoleMenuRelationMapper">
   <resultMap id="BaseResultMap" type="com.moyu.core.user.domain.MyRoleMenuRelation">
-    <result column="moyu_role_menu_relation_id" jdbcType="INTEGER" property="id" />
+    <id column="moyu_role_menu_relation_id" jdbcType="INTEGER" property="id" />
     <result column="moyu_role_menu_relation_role_id" jdbcType="INTEGER" property="roleId" />
     <result column="moyu_role_menu_relation_menu_id" jdbcType="INTEGER" property="menuId" />
   </resultMap>
@@ -82,8 +82,18 @@
       order by ${orderByClause}
     </if>
   </select>
-  <delete id="deleteByExample" parameterType="com.moyu.core.user.domain.MyRoleMenuRelationExample">
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from moyu_role_menu_relation moyu_role_menu_relation
+    where moyu_role_menu_relation.id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
     delete from moyu_role_menu_relation
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.moyu.core.user.domain.MyRoleMenuRelationExample">
+    delete from moyu_role_menu_relation moyu_role_menu_relation
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
@@ -148,5 +158,23 @@
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
     </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.moyu.core.user.domain.MyRoleMenuRelation">
+    update moyu_role_menu_relation
+    <set>
+      <if test="roleId != null">
+        role_id = #{roleId,jdbcType=INTEGER},
+      </if>
+      <if test="menuId != null">
+        menu_id = #{menuId,jdbcType=INTEGER},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.moyu.core.user.domain.MyRoleMenuRelation">
+    update moyu_role_menu_relation
+    set role_id = #{roleId,jdbcType=INTEGER},
+      menu_id = #{menuId,jdbcType=INTEGER}
+    where id = #{id,jdbcType=INTEGER}
   </update>
 </mapper>

@@ -39,8 +39,9 @@
         <pagehelper.version>5.1.2</pagehelper.version>
         <pagehelper-springboot.version>1.2.5</pagehelper-springboot.version>
         <okhttp.version>3.7.0</okhttp.version>
+        <webCollector.version>2.52</webCollector.version>
     </properties>
-    <!--这里对应下面的 dependencyManagement是对等的区别，相反是 大家可以通过引入parent 父工程可以一起使用-->
+    <!-- 引入父级项目 自动可以使用下面的包   这里对应下面的 dependencyManagement是对等的区别，相反是 大家可以通过引入parent 父工程可以一起使用-->
     <dependencies>
         <!--RestController依赖-->
         <dependency>
@@ -62,7 +63,7 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-          <!--  <scope>runtime</scope>-->
+            <!--  <scope>runtime</scope>-->
         </dependency>
 
         <dependency>
@@ -83,6 +84,7 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
     <!--dependencyManagement  统一管理maven包版本，但是子工程并不会自动引入包！还需要将dependency  && groupId && artifactId 再次引入-->
     <dependencyManagement>
         <dependencies>
@@ -141,10 +143,17 @@
             </dependency>
             <!--分页插件 end-->
             <!-- HTTP 客户端-->
-            <dependency>
+            <!--<dependency>
                 <groupId>com.squareup.okhttp3</groupId>
                 <artifactId>okhttp</artifactId>
                 <version>${okhttp.version}</version>
+            </dependency>-->
+
+            <!--爬虫解析器-->
+            <dependency>
+                <groupId>cn.edu.hfut.dmic.webcollector</groupId>
+                <artifactId>WebCollector</artifactId>
+                <version>${webCollector.version}</version>
             </dependency>
 
         </dependencies>

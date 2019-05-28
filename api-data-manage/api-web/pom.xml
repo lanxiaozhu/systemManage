@@ -7,7 +7,7 @@
     <artifactId>api-web</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
-    <packaging>war</packaging><!--编译包 后缀-->
+    <packaging>jar</packaging><!--编译包 后缀-->
 
     <name>api-web</name>
     <description>Demo project for Spring Boot</description>
@@ -60,10 +60,10 @@
         <!--分页插件 end-->
 
         <!-- HTTP 客户端-->
-        <dependency>
+      <!--  <dependency>
             <groupId>com.squareup.okhttp3</groupId>
             <artifactId>okhttp</artifactId>
-        </dependency>
+        </dependency>-->
 
 
         <!--依赖于server  使用它(业务处理)-->
@@ -80,9 +80,50 @@
             <version>1.0-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>
+        <dependency>
+            <groupId>org.mybatis.generator</groupId>
+            <artifactId>mybatis-generator-core</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <!--爬虫解析器-->
+        <dependency>
+            <groupId>cn.edu.hfut.dmic.webcollector</groupId>
+            <artifactId>WebCollector</artifactId>
+        </dependency>
+
+
+
+        <!-- selenium-java -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>3.4.0</version>
+            <scope>compile</scope><!--缺省值 适应于所有阶段，会和项目一起发布-->
+        </dependency>
+
+
 
     </dependencies>
 
+    <!--https://blog.csdn.net/u010429286/article/details/79085212-->
+    <!--在运行mvn install的时候，自动生成这些主清单属性，运行java -jar xxx.jar时会根据主清单属性找到启动类，从而启动程序。-->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+            <!--<plugin>-->
+                <!--<groupId>org.apache.maven.plugins</groupId>-->
+                <!--<artifactId>maven-compiler-plugin</artifactId>-->
+                <!--<configuration>-->
+                    <!--<source>1.6</source>    jdk版本-->
+                    <!--<target>1.6</target>    jdk版本-->
+                <!--</configuration>-->
+            <!--</plugin>-->
+        </plugins>
+    </build>
 
 
 </project>

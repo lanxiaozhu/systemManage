@@ -31,7 +31,61 @@
     <favorites_list name="api-data-manage" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/readme.MD">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="342">
+                <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="87" column="56" selection-start-line="87" selection-start-column="30" selection-end-line="87" selection-end-column="56" />
+            </state>
+          </provider>
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api-web/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="6" column="19" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="19" />
+            </state>
+          </provider>
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/controller/sys/HouseController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/controller/sys/LoginController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="37" column="43" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -47,65 +101,44 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>selectdRole</find>
-      <find>deleteByExample</find>
-      <find>Example_Where_Clause</find>
-      <find>parseObject</find>
-      <find>input</find>
-      <find>权限</find>
-      <find>in</find>
-      <find>menu_lever</find>
-      <find>and id in</find>
-      <find>登陆已过期,请重新登陆</find>
-      <find>moyu_menu_id</find>
-      <find>selectAll</find>
-      <find>&lt;for</find>
-      <find>menuIdTwo</find>
-      <find>Entry</find>
-      <find>Node</find>
-      <find>table</find>
-      <find>modCount</find>
-      <find>resize</find>
-      <find>static</find>
-      <find>ReentrantLock</find>
-      <find>takeLock</find>
-      <find>put(</find>
-      <find>qeuryAll</find>
       <find>put</find>
       <find>size</find>
       <find>threshold</find>
       <find>root of factory hierarchy</find>
       <find>internalAutowiredAnnotationProcessor</find>
       <find>Abs</find>
+      <find>newSingleThreadExecutor</find>
+      <find>newScheduledThreadPool</find>
+      <find>allowCoreThreadTimeOut</find>
+      <find>SynchronousQueue</find>
+      <find>ThreadPoolExecutor</find>
+      <find>BlockingQueue</find>
+      <find>ArrayBlocking</find>
+      <find>停止一秒后启动</find>
+      <find>线程设置了stop</find>
+      <find>URL</find>
+      <find>title</find>
+      <find>crawlPath</find>
+      <find>url</find>
+      <find>手机如何快速赚钱方法</find>
+      <find>000000000000000000000000000000000000000000</find>
+      <find>next</find>
+      <find>topN</find>
+      <find>CrawlDatum</find>
+      <find>checkState</find>
+      <find>com.squareup.okhttp3</find>
+      <find>ibatis</find>
+      <find>myba</find>
+      <find>password error</find>
+      <find>fastJson</find>
     </findStrings>
+    <replaceStrings>
+      <replace>----------------------------------------</replace>
+    </replaceStrings>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/api-biz/src/main/java/com/moyu/core/user/service/impl/LoginServiceImpl.java" />
-        <option value="$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/apiweb/interceptorRequest/RequestPermissionFilter.java" />
-        <option value="$PROJECT_DIR$/api-common/pom.xml" />
-        <option value="$PROJECT_DIR$/api-common/src/main/java/com/moyu/util/WebUtil.java" />
-        <option value="$PROJECT_DIR$/api-web/src/test/java/com/moyu/apiweb/apiweb/TestPython.py" />
-        <option value="$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/apiweb/controller/sys/api/TestCon.java" />
-        <option value="$PROJECT_DIR$/api-web/pom.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/api-biz/src/main/java/com/moyu/core/user/domain/MyUser.java" />
-        <option value="$PROJECT_DIR$/api-biz/src/main/java/com/moyu/core/user/service/RoleManageService.java" />
-        <option value="$PROJECT_DIR$/api-biz/src/main/java/com/moyu/core/user/constant/RoleConstant.java" />
-        <option value="$PROJECT_DIR$/api-tools/src/main/resources/generator.properties" />
-        <option value="$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/apiweb/util/CodeEnum.java" />
-        <option value="$PROJECT_DIR$/api-common/src/main/java/com/moyu/util/datasource/DynamicDataSource.java" />
-        <option value="$PROJECT_DIR$/api-biz/src/main/java/com/moyu/core/user/dao/mapper/MyUserMapper.java" />
-        <option value="$PROJECT_DIR$/api-biz/src/main/java/com/moyu/core/constant/CommonConstant.java" />
-        <option value="$PROJECT_DIR$/api-common/src/main/java/com/moyu/util/aopIntercept/DataSourceIntercept.java" />
-        <option value="$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/apiweb/shiro/MySessionManager.java" />
-        <option value="$PROJECT_DIR$/api-biz/src/main/java/com/moyu/core/user/service/UserManageService.java" />
-        <option value="$PROJECT_DIR$/api-biz/src/main/java/com/moyu/core/user/service/impl/RoleManageServiceImpl.java" />
-        <option value="$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/apiweb/controller/sys/RoleManageController.java" />
-        <option value="$PROJECT_DIR$/api-biz/src/main/java/com/moyu/core/user/service/impl/UserManageServiceImpl.java" />
-        <option value="$PROJECT_DIR$/api-biz/src/main/java/com/moyu/core/user/service/impl/UserRoleRelationServiceImpl.java" />
-        <option value="$PROJECT_DIR$/api-biz/src/main/resources/com/moyu/core/user/dao/MyUserDao.xml" />
         <option value="$PROJECT_DIR$/api-biz/src/main/java/com/moyu/core/user/dao/MyUserDao.java" />
         <option value="$PROJECT_DIR$/api-biz/src/main/resources/com/moyu/core/user/dao/MyRoleDao.xml" />
         <option value="$PROJECT_DIR$/api-biz/src/main/java/com/moyu/core/user/dao/MyRoleDao.java" />
@@ -117,22 +150,46 @@
         <option value="$PROJECT_DIR$/api-biz/src/main/java/com/moyu/core/user/service/RoleMenuRelationService.java" />
         <option value="$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/apiweb/interceptorRequest/GlobalExceptionHandler.java" />
         <option value="$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/apiweb/controller/sys/UserManageController.java" />
-        <option value="$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/apiweb/shiro/ShiroConfig.java" />
         <option value="$PROJECT_DIR$/api-biz/src/main/java/com/moyu/core/user/dao/mapper/MyMenuMapper.java" />
         <option value="$PROJECT_DIR$/api-biz/src/main/java/com/moyu/core/user/dao/MyMenuDao.java" />
         <option value="$PROJECT_DIR$/api-biz/src/main/resources/com/moyu/core/user/dao/MyMenuDao.xml" />
         <option value="$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/apiweb/util/BaseResponse.java" />
         <option value="$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/apiweb/controller/api/TestCon.java" />
         <option value="$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/apiweb/shiro/MyShiroRealm.java" />
-        <option value="$PROJECT_DIR$/readme.MD" />
-        <option value="$PROJECT_DIR$/api-web/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/api-web/src/test/java/com/moyu/apiweb/apiweb/ApiWebApplicationTests.java" />
-        <option value="$PROJECT_DIR$/api-web/src/test/java/com/moyu/apiweb/apiweb/springBena/OrderConfig.java" />
         <option value="$PROJECT_DIR$/api-web/src/test/java/com/moyu/apiweb/apiweb/springBena/Teacher.java" />
         <option value="$PROJECT_DIR$/api-biz/src/main/java/com/moyu/core/user/service/MenuService.java" />
         <option value="$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/apiweb/controller/sys/MenuController.java" />
         <option value="$PROJECT_DIR$/api-biz/src/main/java/com/moyu/core/user/service/impl/MenuServiceImpl.java" />
         <option value="$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/apiweb/controller/sys/LoginController.java" />
+        <option value="$PROJECT_DIR$/api-web/src/test/java/com/moyu/apiweb/apiweb/equals.java" />
+        <option value="$PROJECT_DIR$/api-web/src/test/java/com/moyu/apiweb/apiweb/ExecutorServer.java" />
+        <option value="$PROJECT_DIR$/api-web/src/test/java/com/moyu/apiweb/apiweb/Custom.java" />
+        <option value="$PROJECT_DIR$/api-web/src/test/java/com/moyu/apiweb/apiweb/CustomExcutor.java" />
+        <option value="$PROJECT_DIR$/api-web/src/test/java/com/moyu/apiweb/apiweb/CustomExecutor.java" />
+        <option value="$PROJECT_DIR$/api-web/src/test/java/com/moyu/apiweb/apiweb/Hash.java" />
+        <option value="$PROJECT_DIR$/api-web/src/test/java/com/moyu/apiweb/apiweb/HashCodeHelper.java" />
+        <option value="$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/apiweb/shiro/ShiroConfig.java" />
+        <option value="$PROJECT_DIR$/api-web/src/test/java/com/moyu/apiweb/apiweb/CPUMonitorCalc.java" />
+        <option value="$PROJECT_DIR$/api-web/src/test/java/com/moyu/apiweb/apiweb/VolatileUnsafe.java" />
+        <option value="$PROJECT_DIR$/api-web/src/test/java/com/moyu/apiweb/apiweb/springBena/OrderConfig.java" />
+        <option value="$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/apiweb/controller/HelloWorld.java" />
+        <option value="$PROJECT_DIR$/api-web/src/test/java/com/moyu/apiweb/apiweb/TestAb.java" />
+        <option value="$PROJECT_DIR$/api-web/src/test/java/com/moyu/apiweb/apiweb/Crawler.java" />
+        <option value="$PROJECT_DIR$/api-web/src/test/java/com/moyu/apiweb/apiweb/webDriver.java" />
+        <option value="$PROJECT_DIR$/api-web/src/test/java/com/moyu/apiweb/apiweb/ApiWebApplicationTests.java" />
+        <option value="$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/controller/HelloWorld.java" />
+        <option value="$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/controller/api/TestCon.java" />
+        <option value="$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/shiro/ShiroConfig.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/api-web/pom.xml" />
+        <option value="$PROJECT_DIR$/api-web/src/test/java/com/moyu/apiweb/ApiWebApplicationTests.java" />
+        <option value="$PROJECT_DIR$/api-tools/src/main/resources/generator.properties" />
+        <option value="$PROJECT_DIR$/api-tools/src/main/resources/user.xml" />
+        <option value="$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/controller/sys/HouseController.java" />
+        <option value="$PROJECT_DIR$/api-web/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/businessProcess.MD" />
+        <option value="$PROJECT_DIR$/shrio.MD" />
+        <option value="$PROJECT_DIR$/readme.MD" />
       </list>
     </option>
   </component>
@@ -166,13 +223,17 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="950" />
-    <option name="width" value="980" />
-    <option name="height" value="1040" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="1940" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
+      <flattenPackages ProjectPane="false" />
+      <hideEmptyPackages ProjectPane="true" />
+      <autoscrollToSource ProjectPane="true" />
       <autoscrollFromSource ProjectPane="true" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
@@ -184,74 +245,6 @@
             <path>
               <item name="api-data-manage" type="b2602c69:ProjectViewProjectNode" />
               <item name="api-data-manage" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="api-data-manage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="api-data-manage" type="462c0819:PsiDirectoryNode" />
-              <item name="api-biz" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="api-data-manage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="api-data-manage" type="462c0819:PsiDirectoryNode" />
-              <item name="api-biz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="api-data-manage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="api-data-manage" type="462c0819:PsiDirectoryNode" />
-              <item name="api-biz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="api-data-manage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="api-data-manage" type="462c0819:PsiDirectoryNode" />
-              <item name="api-biz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="api-data-manage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="api-data-manage" type="462c0819:PsiDirectoryNode" />
-              <item name="api-biz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="api-data-manage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="api-data-manage" type="462c0819:PsiDirectoryNode" />
-              <item name="api-biz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="api-data-manage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="api-data-manage" type="462c0819:PsiDirectoryNode" />
-              <item name="api-biz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="api-data-manage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="api-data-manage" type="462c0819:PsiDirectoryNode" />
-              <item name="api-biz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="api-data-manage" type="b2602c69:ProjectViewProjectNode" />
@@ -315,19 +308,14 @@
               <item name="api-web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="apiweb" type="462c0819:PsiDirectoryNode" />
-              <item name="shiro" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="api-data-manage" type="b2602c69:ProjectViewProjectNode" />
               <item name="api-data-manage" type="462c0819:PsiDirectoryNode" />
               <item name="api-web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="apiweb" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -344,9 +332,10 @@
     <property name="SearchEverywhereHistoryKey" value="MyRoleMapper&#9;FILE&#9;file://D:/project/study/api-data-manage/api-biz/src/main/resources/com/moyu/core/user/dao/mapper/MyRoleMapper.xml&#10;MyMenuDao&#9;FILE&#9;file://D:/project/study/api-data-manage/api-biz/src/main/resources/com/moyu/core/user/dao/MyMenuDao.xml&#10;userManageController&#9;FILE&#9;file://D:/project/study/api-data-manage/api-web/src/main/java/com/moyu/apiweb/apiweb/controller/sys/UserManageController.java&#10;RequestPermissionFilter&#9;FILE&#9;file://D:/project/study/api-data-manage/api-web/src/main/java/com/moyu/apiweb/apiweb/interceptorRequest/RequestPermissionFilter.java&#10;MyMenuMapper&#9;FILE&#9;file://D:/project/study/api-data-manage/api-biz/src/main/resources/com/moyu/core/user/dao/mapper/MyMenuMapper.xml" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555064311393" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557827598585" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/apiweb/controller" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/kitty" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -354,7 +343,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -370,11 +359,11 @@
       <recent name="com.moyu.util.datasource" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\linux\study\api-data-manage\api-biz\src\main\resources\com\moyu\core\user\dao\" />
       <recent name="C:\linux\study\api-data-manage\api-biz\src\main\resources\com\moyu\core\user\dao" />
       <recent name="D:\project\study\api-data-manage\api-biz\src\main\resources\com\moyu\core\user\dao" />
       <recent name="D:\project\study\api-data-manage\api-tools\src\main\resources" />
       <recent name="D:\project\study\api-data-manage\api-biz\src\main\java\com\moyu\core\user\service" />
-      <recent name="D:\project\study\api-data-manage\api-common\src\main\java\com\moyu\util" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -389,34 +378,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ApiWebApplication">
-    <configuration name="MenuServiceImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.moyu.core.user.service.impl.MenuServiceImpl" />
-      <module name="api-biz" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.moyu.core.user.service.impl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestCon" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.moyu.apiweb.apiweb.controller.api.TestCon" />
-      <module name="api-web" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.moyu.apiweb.apiweb.controller.api.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ApiWebApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Spring Boot.ApiWebApplication (1)">
+    <configuration name="Crawler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.moyu.apiweb.apiweb.Crawler" />
       <module name="api-web" />
       <extension name="coverage">
         <pattern>
@@ -424,15 +388,53 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.moyu.apiweb.apiweb" />
-      <option name="MAIN_CLASS_NAME" value="com.moyu.apiweb.apiweb.ApiWebApplicationTests" />
-      <option name="METHOD_NAME" value="contextLoads" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.moyu.tools.genertor.TestGenerator" />
+      <module name="api-tools" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.moyu.tools.genertor.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="webDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.moyu.apiweb.apiweb.webDriver" />
+      <module name="api-web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.moyu.apiweb.apiweb.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApiWebApplicationTests.tests (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="api-web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.moyu.apiweb.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.moyu.apiweb" />
+      <option name="MAIN_CLASS_NAME" value="com.moyu.apiweb.ApiWebApplicationTests" />
+      <option name="METHOD_NAME" value="tests" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApiWebApplicationTests.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ApiWebApplicationTests.tests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="api-web" />
       <extension name="coverage">
         <pattern>
@@ -442,23 +444,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.moyu.apiweb.apiweb" />
       <option name="MAIN_CLASS_NAME" value="com.moyu.apiweb.apiweb.ApiWebApplicationTests" />
-      <option name="METHOD_NAME" value="test1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ApiWebApplicationTests.testBean" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="api-web" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.moyu.apiweb.apiweb.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.moyu.apiweb.apiweb" />
-      <option name="MAIN_CLASS_NAME" value="com.moyu.apiweb.apiweb.ApiWebApplicationTests" />
-      <option name="METHOD_NAME" value="testBean" />
+      <option name="METHOD_NAME" value="tests" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -491,6 +477,13 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
+    <configuration name="ApiWebApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="api-web" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.moyu.apiweb.ApiWebApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ApiWebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="api-web" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.moyu.apiweb.apiweb.ApiWebApplication" />
@@ -501,21 +494,22 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.TestCon" />
-      <item itemvalue="Application.MenuServiceImpl" />
-      <item itemvalue="JUnit.ApiWebApplicationTests.contextLoads" />
-      <item itemvalue="JUnit.ApiWebApplicationTests.test1" />
-      <item itemvalue="JUnit.ApiWebApplicationTests.testBean" />
+      <item itemvalue="Application.Crawler" />
+      <item itemvalue="Application.webDriver" />
+      <item itemvalue="Application.TestGenerator" />
+      <item itemvalue="JUnit.ApiWebApplicationTests.tests" />
+      <item itemvalue="JUnit.ApiWebApplicationTests.tests (1)" />
       <item itemvalue="Maven.runMaven" />
       <item itemvalue="Spring Boot.ApiWebApplication" />
+      <item itemvalue="Spring Boot.ApiWebApplication (1)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ApiWebApplicationTests.testBean" />
-        <item itemvalue="JUnit.ApiWebApplicationTests.contextLoads" />
-        <item itemvalue="Application.TestCon" />
-        <item itemvalue="Application.MenuServiceImpl" />
-        <item itemvalue="JUnit.ApiWebApplicationTests.test1" />
+        <item itemvalue="Application.TestGenerator" />
+        <item itemvalue="JUnit.ApiWebApplicationTests.tests (1)" />
+        <item itemvalue="JUnit.ApiWebApplicationTests.tests" />
+        <item itemvalue="Application.webDriver" />
+        <item itemvalue="Application.Crawler" />
       </list>
     </recent_temporary>
   </component>
@@ -643,47 +637,81 @@
       <workItem from="1554996308200" duration="693000" />
       <workItem from="1554997080041" duration="279000" />
       <workItem from="1554997781250" duration="2428000" />
-      <workItem from="1555056405126" duration="4686000" />
+      <workItem from="1555056405126" duration="4986000" />
+      <workItem from="1555064551845" duration="611000" />
+      <workItem from="1555066832816" duration="1000" />
+      <workItem from="1555069609068" duration="14235000" />
+      <workItem from="1555636110806" duration="9096000" />
+      <workItem from="1555834222494" duration="6795000" />
+      <workItem from="1555918822166" duration="9929000" />
+      <workItem from="1556005007401" duration="2288000" />
+      <workItem from="1556068519730" duration="926000" />
+      <workItem from="1556172863366" duration="689000" />
+      <workItem from="1556241301242" duration="551000" />
+      <workItem from="1556241897506" duration="723000" />
+      <workItem from="1556258022915" duration="2275000" />
+      <workItem from="1556282175878" duration="6247000" />
+      <workItem from="1557108306559" duration="93000" />
+      <workItem from="1557109130379" duration="32000" />
+      <workItem from="1557133803032" duration="387000" />
+      <workItem from="1557134898602" duration="133000" />
+      <workItem from="1557301424437" duration="800000" />
+      <workItem from="1557305124702" duration="61000" />
+      <workItem from="1557306497724" duration="268000" />
+      <workItem from="1557307910328" duration="1333000" />
+      <workItem from="1557309853182" duration="21000" />
+      <workItem from="1557388833512" duration="10000" />
+      <workItem from="1557478301355" duration="323000" />
+      <workItem from="1557479581247" duration="1060000" />
+      <workItem from="1557714386976" duration="845000" />
+      <workItem from="1557715969016" duration="7707000" />
+      <workItem from="1557801536801" duration="3383000" />
+      <workItem from="1557882890774" duration="28000" />
+      <workItem from="1558343057691" duration="45000" />
+      <workItem from="1558343156544" duration="11000" />
+      <workItem from="1558576265066" duration="66000" />
+      <workItem from="1558790057313" duration="35000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ApiWebApplicationTests_contextLoads - 2019.04.01 at 22h 38m 35s.xml">
-      <configuration name="ApiWebApplicationTests.contextLoads" configurationId="JUnit" />
+    <history-entry file="ApiWebApplicationTests_tests_(1) - 2019.04.26 at 23h 04m 59s.xml">
+      <configuration name="ApiWebApplicationTests.tests (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ApiWebApplicationTests_contextLoads - 2019.04.11 at 23h 33m 53s.xml">
-      <configuration name="ApiWebApplicationTests.contextLoads" configurationId="JUnit" />
+    <history-entry file="ApiWebApplicationTests_tests_(1) - 2019.04.26 at 23h 05m 22s.xml">
+      <configuration name="ApiWebApplicationTests.tests (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ApiWebApplicationTests_contextLoads - 2019.04.11 at 23h 34m 32s.xml">
-      <configuration name="ApiWebApplicationTests.contextLoads" configurationId="JUnit" />
+    <history-entry file="ApiWebApplicationTests_tests_(1) - 2019.04.26 at 23h 09m 00s.xml">
+      <configuration name="ApiWebApplicationTests.tests (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ApiWebApplicationTests_contextLoads - 2019.04.11 at 23h 35m 23s.xml">
-      <configuration name="ApiWebApplicationTests.contextLoads" configurationId="JUnit" />
+    <history-entry file="ApiWebApplicationTests_tests_(1) - 2019.04.26 at 23h 09m 33s.xml">
+      <configuration name="ApiWebApplicationTests.tests (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ApiWebApplicationTests_contextLoads - 2019.04.11 at 23h 36m 37s.xml">
-      <configuration name="ApiWebApplicationTests.contextLoads" configurationId="JUnit" />
+    <history-entry file="ApiWebApplicationTests_tests_(1) - 2019.04.26 at 23h 10m 04s.xml">
+      <configuration name="ApiWebApplicationTests.tests (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ApiWebApplicationTests_testBean - 2019.04.11 at 23h 52m 26s.xml">
-      <configuration name="ApiWebApplicationTests.testBean" configurationId="JUnit" />
+    <history-entry file="ApiWebApplicationTests_tests_(1) - 2019.04.26 at 23h 10m 38s.xml">
+      <configuration name="ApiWebApplicationTests.tests (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ApiWebApplicationTests_testBean - 2019.04.11 at 23h 53m 55s.xml">
-      <configuration name="ApiWebApplicationTests.testBean" configurationId="JUnit" />
+    <history-entry file="ApiWebApplicationTests_tests_(1) - 2019.04.26 at 23h 11m 17s.xml">
+      <configuration name="ApiWebApplicationTests.tests (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ApiWebApplicationTests_testBean - 2019.04.11 at 23h 55m 36s.xml">
-      <configuration name="ApiWebApplicationTests.testBean" configurationId="JUnit" />
+    <history-entry file="ApiWebApplicationTests_tests_(1) - 2019.04.26 at 23h 15m 36s.xml">
+      <configuration name="ApiWebApplicationTests.tests (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ApiWebApplicationTests_testBean - 2019.04.11 at 23h 59m 53s.xml">
-      <configuration name="ApiWebApplicationTests.testBean" configurationId="JUnit" />
+    <history-entry file="ApiWebApplicationTests_tests_(1) - 2019.04.26 at 23h 21m 40s.xml">
+      <configuration name="ApiWebApplicationTests.tests (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ApiWebApplicationTests_testBean - 2019.04.12 at 00h 19m 14s.xml">
-      <configuration name="ApiWebApplicationTests.testBean" configurationId="JUnit" />
+    <history-entry file="ApiWebApplicationTests_tests_(1) - 2019.04.26 at 23h 22m 19s.xml">
+      <configuration name="ApiWebApplicationTests.tests (1)" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="364927000" />
+    <option name="totallyTimeSpent" value="436234000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-8" y="-8" width="1552" height="840" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="UI Designer" order="1" />
@@ -691,19 +719,19 @@
       <window_info id="Capture Tool" order="3" />
       <window_info id="Web" order="4" side_tool="true" />
       <window_info id="Designer" order="5" />
-      <window_info active="true" content_ui="combo" id="Project" order="6" sideWeight="0.49853373" visible="true" weight="0.29155496" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" sideWeight="0.49853373" visible="true" weight="0.28313252" />
       <window_info id="Structure" order="7" weight="0.24865952" />
-      <window_info anchor="bottom" id="Terminal" order="0" weight="0.32844576" />
-      <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.50067025" side_tool="true" weight="0.5219236" />
-      <window_info anchor="bottom" id="Messages" order="2" weight="0.4427157" />
-      <window_info anchor="bottom" id="Java Enterprise" order="3" weight="0.32963988" />
+      <window_info anchor="bottom" id="Terminal" order="0" weight="0.32797858" />
+      <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.5013405" side_tool="true" weight="0.115983024" />
+      <window_info anchor="bottom" id="Messages" order="2" weight="0.09335219" />
+      <window_info anchor="bottom" id="Java Enterprise" order="3" weight="0.32931727" />
       <window_info anchor="bottom" id="Database Changes" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="5" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Spring" order="6" weight="0.3281471" />
+      <window_info anchor="bottom" id="Spring" order="6" weight="0.32797858" />
       <window_info anchor="bottom" id="Message" order="7" />
       <window_info anchor="bottom" id="Find" order="8" weight="0.32844576" />
-      <window_info anchor="bottom" id="Run" order="9" sideWeight="0.49932975" weight="0.36916548" />
-      <window_info anchor="bottom" id="Debug" order="10" sideWeight="0.49932975" weight="0.4059406" />
+      <window_info anchor="bottom" id="Run" order="9" sideWeight="0.49865952" weight="0.5120226" />
+      <window_info anchor="bottom" id="Debug" order="10" sideWeight="0.49932975" weight="0.2857143" />
       <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="13" />
@@ -731,19 +759,19 @@
       <window_info id="Capture Tool" order="3" />
       <window_info id="Web" order="4" side_tool="true" />
       <window_info id="Designer" order="5" />
-      <window_info content_ui="combo" id="Project" order="6" sideWeight="0.49853373" weight="0.29155496" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" sideWeight="0.49853373" visible="true" weight="0.2660858" />
       <window_info id="Structure" order="7" weight="0.24865952" />
-      <window_info anchor="bottom" id="Terminal" order="0" weight="0.32844576" />
-      <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.50067025" side_tool="true" weight="0.5219236" />
-      <window_info anchor="bottom" id="Messages" order="2" weight="0.4427157" />
-      <window_info anchor="bottom" id="Java Enterprise" order="3" weight="0.32963988" />
+      <window_info anchor="bottom" id="Terminal" order="0" weight="0.32797858" />
+      <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.5013405" side_tool="true" visible="true" weight="0.115983024" />
+      <window_info anchor="bottom" id="Messages" order="2" weight="0.09335219" />
+      <window_info anchor="bottom" id="Java Enterprise" order="3" weight="0.32931727" />
       <window_info anchor="bottom" id="Database Changes" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="5" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Spring" order="6" weight="0.3281471" />
+      <window_info anchor="bottom" id="Spring" order="6" weight="0.32797858" />
       <window_info anchor="bottom" id="Message" order="7" />
       <window_info anchor="bottom" id="Find" order="8" weight="0.32844576" />
-      <window_info anchor="bottom" id="Run" order="9" sideWeight="0.49932975" weight="0.36916548" />
-      <window_info active="true" anchor="bottom" id="Debug" order="10" sideWeight="0.49932975" visible="true" weight="0.4059406" />
+      <window_info anchor="bottom" id="Run" order="9" sideWeight="0.49865952" visible="true" weight="0.115983024" />
+      <window_info anchor="bottom" id="Debug" order="10" sideWeight="0.49932975" weight="0.2857143" />
       <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="13" />
@@ -772,7 +800,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/apiweb/shiro/MyShiroRealm.java</url>
+          <url>file://$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/shiro/MyShiroRealm.java</url>
           <line>109</line>
           <properties />
           <option name="timeStamp" value="2" />
@@ -784,25 +812,25 @@
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/apiweb/shiro/MyShiroRealm.java</url>
+          <url>file://$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/shiro/MyShiroRealm.java</url>
           <line>54</line>
           <properties />
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/apiweb/shiro/MyShiroRealm.java</url>
+          <url>file://$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/shiro/MyShiroRealm.java</url>
           <line>74</line>
           <properties />
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/apiweb/shiro/MyShiroRealm.java</url>
+          <url>file://$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/shiro/MyShiroRealm.java</url>
           <line>82</line>
           <properties />
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/apiweb/shiro/MyShiroRealm.java</url>
+          <url>file://$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/shiro/MyShiroRealm.java</url>
           <line>112</line>
           <properties />
           <option name="timeStamp" value="27" />
@@ -820,13 +848,13 @@
           <option name="timeStamp" value="33" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/apiweb/shiro/MyShiroRealm.java</url>
+          <url>file://$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/shiro/MyShiroRealm.java</url>
           <line>125</line>
           <properties />
           <option name="timeStamp" value="43" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/apiweb/shiro/MyShiroRealm.java</url>
+          <url>file://$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/shiro/MyShiroRealm.java</url>
           <line>53</line>
           <properties />
           <option name="timeStamp" value="62" />
@@ -856,7 +884,7 @@
           <option name="timeStamp" value="80" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/apiweb/interceptorRequest/RequestPermissionFilter.java</url>
+          <url>file://$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/interceptorRequest/RequestPermissionFilter.java</url>
           <line>29</line>
           <properties />
           <option name="timeStamp" value="81" />
@@ -886,13 +914,13 @@
           <option name="timeStamp" value="96" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/apiweb/controller/sys/MenuController.java</url>
+          <url>file://$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/controller/sys/MenuController.java</url>
           <line>51</line>
           <properties />
           <option name="timeStamp" value="97" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/apiweb/controller/sys/RoleManageController.java</url>
+          <url>file://$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/controller/sys/RoleManageController.java</url>
           <line>55</line>
           <properties />
           <option name="timeStamp" value="98" />
@@ -904,19 +932,19 @@
           <option name="timeStamp" value="99" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/apiweb/controller/sys/UserRoleRelationController.java</url>
+          <url>file://$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/controller/sys/UserRoleRelationController.java</url>
           <line>48</line>
           <properties />
           <option name="timeStamp" value="104" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/apiweb/controller/sys/UserRoleRelationController.java</url>
+          <url>file://$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/controller/sys/UserRoleRelationController.java</url>
           <line>65</line>
           <properties />
           <option name="timeStamp" value="107" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/apiweb/controller/sys/RoleMenuRelationController.java</url>
+          <url>file://$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/controller/sys/RoleMenuRelationController.java</url>
           <line>50</line>
           <properties />
           <option name="timeStamp" value="112" />
@@ -934,7 +962,7 @@
           <option name="timeStamp" value="115" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/apiweb/shiro/MyShiroRealm.java</url>
+          <url>file://$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/shiro/MyShiroRealm.java</url>
           <line>71</line>
           <properties />
           <option name="timeStamp" value="119" />
@@ -1017,17 +1045,17 @@
           <properties />
           <option name="timeStamp" value="142" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/api-web/src/test/java/com/moyu/apiweb/apiweb/ApiWebApplicationTests.java</url>
-          <line>52</line>
-          <properties />
-          <option name="timeStamp" value="145" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/apiweb/controller/sys/MenuController.java</url>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/controller/sys/MenuController.java</url>
           <line>81</line>
           <properties />
           <option name="timeStamp" value="146" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/cn/edu/hfut/dmic/webcollector/WebCollector/2.52/WebCollector-2.52.jar!/cn/edu/hfut/dmic/webcollector/crawler/Crawler.class</url>
+          <line>82</line>
+          <properties />
+          <option name="timeStamp" value="150" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -1052,115 +1080,143 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis-spring/1.3.2/mybatis-spring-1.3.2.jar!/org/mybatis/spring/SqlSessionTemplate.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/cn/edu/hfut/dmic/webcollector/WebCollector/2.52/WebCollector-2.52.jar!/cn/edu/hfut/dmic/webcollector/plugin/ram/RamGenerator.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/cn/edu/hfut/dmic/webcollector/WebCollector/2.52/WebCollector-2.52.jar!/cn/edu/hfut/dmic/webcollector/plugin/berkeley/BerkeleyGenerator.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/cn/edu/hfut/dmic/webcollector/WebCollector/2.52/WebCollector-2.52.jar!/cn/edu/hfut/dmic/webcollector/crawldb/Generator.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/cn/edu/hfut/dmic/webcollector/WebCollector/2.52/WebCollector-2.52.jar!/cn/edu/hfut/dmic/webcollector/crawler/Crawler.class" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/lang/System.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2603">
-          <caret line="194" selection-start-line="194" selection-end-line="194" />
+        <state relative-caret-position="14136">
+          <caret line="788" column="12" selection-start-line="788" selection-start-column="12" selection-end-line="788" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.6/mybatis-3.4.6.jar!/org/apache/ibatis/session/defaults/DefaultSqlSession.class">
+    <entry file="file://$PROJECT_DIR$/api-web/src/test/java/com/moyu/apiweb/apiweb/webDriver.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-chrome-driver/3.14.0/selenium-chrome-driver-3.14.0.jar!/org/openqa/selenium/chrome/ChromeDriver.class" />
+    <entry file="file://$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/interceptorRequest/CorsConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1710">
-          <caret line="123" column="35" selection-start-line="123" selection-start-column="35" selection-end-line="123" selection-end-column="35" />
+        <state relative-caret-position="133">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.6/mybatis-3.4.6.jar!/org/apache/ibatis/executor/Executor.class">
+    <entry file="file://$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/ServletInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api-web/src/test/java/com/moyu/apiweb/Crawler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="134" column="35" lean-forward="true" selection-start-line="134" selection-start-column="35" selection-end-line="134" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api-web/src/test/java/com/moyu/apiweb/ExecutorServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="23" column="53" lean-forward="true" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api-web/src/test/java/com/moyu/apiweb/HashCodeHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api-web/src/test/java/com/moyu/apiweb/TestAb.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="30" lean-forward="true" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api-web/src/test/java/com/moyu/apiweb/springBena/OrderConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="16" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api-web/src/test/java/com/moyu/apiweb/springBena/Teacher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="515">
+          <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/controller/api/TestCon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="35" column="48" selection-start-line="35" selection-start-column="48" selection-end-line="35" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-edge-driver/3.14.0/selenium-edge-driver-3.14.0.pom" />
+    <entry file="file://$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/shiro/MySessionManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/shiro/ShiroConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1311">
+          <caret line="85" column="73" selection-start-line="85" selection-start-column="73" selection-end-line="85" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/shiro/MyShiroRealm.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
-          <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.6/mybatis-3.4.6.jar!/org/apache/ibatis/executor/BaseExecutor.class">
+    <entry file="file://$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/controller/HelloWorld.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4351">
-          <caret line="261" column="35" selection-start-line="261" selection-start-column="35" selection-end-line="261" selection-end-column="35" />
+        <state relative-caret-position="114">
+          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.6/mybatis-3.4.6.jar!/org/apache/ibatis/executor/ReuseExecutor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="43" column="25" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.6/mybatis-3.4.6.jar!/org/apache/ibatis/executor/statement/CallableStatementHandler.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="49" column="52" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/apiweb/ServletInitializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.6/mybatis-3.4.6.jar!/org/apache/ibatis/executor/statement/RoutingStatementHandler.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="817">
-          <caret line="57" column="32" selection-start-line="57" selection-start-column="32" selection-end-line="57" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.6/mybatis-3.4.6.jar!/org/apache/ibatis/executor/CachingExecutor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="912">
-          <caret line="70" column="23" selection-start-line="70" selection-start-column="23" selection-end-line="70" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.6/mybatis-3.4.6.jar!/org/apache/ibatis/mapping/MappedStatement.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1596">
-          <caret line="146" column="20" selection-start-line="146" selection-start-column="20" selection-end-line="146" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/apiweb/ApiWebApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="27" column="11" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.6/mybatis-3.4.6.jar!/org/apache/ibatis/executor/statement/StatementHandler.class">
+    <entry file="file://$PROJECT_DIR$/api-web/src/test/java/com/moyu/apiweb/ApiWebApplicationTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
-          <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.1.2.RELEASE/spring-beans-5.1.2.RELEASE.jar!/org/springframework/beans/factory/annotation/Value.class">
+    <entry file="file://$PROJECT_DIR$/api-biz/src/main/resources/com/moyu/core/user/dao/MyMenuDao.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="14" column="12" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/io/ExpiringCache.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="93" selection-start-line="93" selection-end-line="93" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/jre/lib/deploy.jar!/com/sun/applet2/AppletParameters.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/util/Map.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4047">
-          <caret line="239" column="6" selection-start-line="239" selection-start-column="6" selection-end-line="239" selection-end-column="6" />
+        <state relative-caret-position="159">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -1171,272 +1227,203 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api-biz/src/main/resources/com/moyu/core/user/dao/MyMenuDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="38" selection-start-column="38" selection-end-column="38" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/api-common/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/api-web/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="33" column="15" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/util/HashMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="700" column="26" selection-start-line="700" selection-start-column="20" selection-end-line="700" selection-end-column="26" />
-          <folding>
-            <element signature="e#19296#19297#0" expanded="true" />
-            <element signature="e#19379#19380#0" expanded="true" />
-            <element signature="e#24298#24299#0" expanded="true" />
-            <element signature="e#24363#24364#0" expanded="true" />
-            <element signature="e#66531#66532#0" expanded="true" />
-            <element signature="e#66588#66589#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api-biz/src/main/java/com/moyu/core/user/service/impl/UserRoleRelationServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="619">
-          <caret line="50" selection-start-line="50" selection-end-line="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/readme.MD">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="437">
-            <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="6" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.2.RELEASE/spring-context-5.1.2.RELEASE.jar!/org/springframework/context/annotation/AnnotationConfigApplicationContext.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="31" column="11" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.2.RELEASE/spring-context-5.1.2.RELEASE.jar!/org/springframework/context/annotation/Bean.class">
+    <entry file="file://$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/ApiWebApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
-          <caret line="31" column="21" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="21" />
+          <caret line="25" column="71" selection-start-line="25" selection-start-column="62" selection-end-line="25" selection-end-column="89" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.2.RELEASE/spring-context-5.1.2.RELEASE.jar!/org/springframework/context/support/AbstractApplicationContext.class">
+    <entry file="file://$PROJECT_DIR$/api-biz/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="585" column="9" lean-forward="true" selection-start-line="585" selection-start-column="9" selection-end-line="585" selection-end-column="9" />
+        <state relative-caret-position="323">
+          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
         </state>
       </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.1.2.RELEASE/spring-beans-5.1.2.RELEASE.jar!/org/springframework/beans/factory/support/AbstractBeanFactory.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.1.0.RELEASE/spring-boot-autoconfigure-2.1.0.RELEASE.jar!/org/springframework/boot/autoconfigure/jdbc/DataSourceAutoConfiguration.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="109" column="64" selection-start-line="109" selection-start-column="60" selection-end-line="109" selection-end-column="64" />
+        <state relative-caret-position="190">
+          <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api-web/src/test/java/com/moyu/apiweb/apiweb/ApiWebApplicationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="75" column="28" selection-start-line="75" selection-start-column="28" selection-end-line="75" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.1.2.RELEASE/spring-beans-5.1.2.RELEASE.jar!/org/springframework/beans/factory/BeanFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api-web/src/test/java/com/moyu/apiweb/apiweb/springBena/Teacher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#270#271#0" expanded="true" />
-            <element signature="e#340#341#0" expanded="true" />
-            <element signature="e#1213#1214#0" expanded="true" />
-            <element signature="e#1264#1265#0" expanded="true" />
-            <element signature="e#1292#1293#0" expanded="true" />
-            <element signature="e#1346#1347#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api-web/src/test/java/com/moyu/apiweb/apiweb/springBena/OrderConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#375#376#0" expanded="true" />
-            <element signature="e#412#413#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api-common/src/main/java/com/moyu/util/aopIntercept/DataSourceIntercept.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-83">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api-common/src/main/java/com/moyu/util/asyn/ThreadPoolUtil.java">
+    <entry file="file://$PROJECT_DIR$/api-biz/src/main/java/com/moyu/core/user/domain/MyMenu.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-190">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api-common/src/main/java/com/moyu/util/ListUtil.java">
+    <entry file="file://$PROJECT_DIR$/api-biz/src/main/java/com/moyu/core/user/domain/MoyuHouseInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        <state relative-caret-position="-1831">
+          <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api-common/src/main/java/com/moyu/util/StrinUtil.java">
+    <entry file="file://$PROJECT_DIR$/api-biz/src/main/resources/com/moyu/core/user/dao/mapper/MoyuHouseInfoMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        <state relative-caret-position="57">
+          <caret line="3" column="69" selection-start-line="3" selection-start-column="69" selection-end-line="3" selection-end-column="69" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api-common/src/main/java/com/moyu/util/WebUtil.java">
+    <entry file="file://$PROJECT_DIR$/api-tools/src/main/resources/generator.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="31">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        <state>
+          <caret column="30" selection-start-column="30" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api-common/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/api-tools/src/main/java/com/moyu/tools/genertor/MyCommentGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2242">
+          <caret line="131" column="20" selection-start-line="131" selection-start-column="20" selection-end-line="131" selection-end-column="20" />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api-common/src/main/java/com/moyu/util/datasource/DataBaseConfiguration.java">
+    <entry file="file://$PROJECT_DIR$/api-tools/src/main/java/com/moyu/tools/genertor/SerializablePlugin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api-tools/src/main/resources/user.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1406">
+          <caret line="74" column="16" selection-start-line="74" selection-start-column="16" selection-end-line="74" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api-tools/src/main/java/com/moyu/tools/genertor/TestGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/controller/sys/MenuController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/controller/sys/RoleMenuRelationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/controller/sys/UserManageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="30" column="15" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api-web/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api-biz/src/main/java/com/moyu/core/user/domain/MoyuHouseInfoExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27170">
+          <caret line="1453" column="24" selection-start-line="1453" selection-start-column="24" selection-end-line="1453" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api-biz/src/main/java/com/moyu/core/user/dao/mapper/MoyuHouseInfoMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="969">
+          <caret line="54" column="68" selection-start-line="54" selection-start-column="40" selection-end-line="54" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/9.0.12/tomcat-embed-core-9.0.12.jar!/org/apache/catalina/startup/HomesUserDatabase.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/businessProcess.MD" />
+    <entry file="file://$PROJECT_DIR$/generatorCode.MD">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="266">
+            <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shrio.MD">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor>
+            <caret selection-end-line="21" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.MD">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="342">
+            <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api-web/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="19" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="19" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/controller/sys/HouseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/controller/sys/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
-          <caret line="35" column="32" selection-start-line="35" selection-start-column="15" selection-end-line="35" selection-end-column="32" />
+          <caret line="37" column="43" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api-common/src/main/java/com/moyu/util/datasource/DynamicDataSourceHolder.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="36" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="36" />
+        <state relative-caret-position="247">
+          <caret line="87" column="56" selection-start-line="87" selection-start-column="30" selection-end-line="87" selection-end-column="56" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api-common/src/main/java/com/moyu/util/datasource/DynamicDataSource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api-biz/src/main/java/com/moyu/core/user/service/impl/MenuServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="93" column="60" selection-start-line="93" selection-start-column="60" selection-end-line="93" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2671#2672#0" expanded="true" />
-            <element signature="e#2723#2724#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api-biz/src/main/java/com/moyu/core/user/dao/mapper/MyMenuMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="35">
-          <caret line="35" column="6" lean-forward="true" selection-start-line="35" selection-start-column="6" selection-end-line="35" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api-biz/src/main/java/com/moyu/core/user/service/MenuService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/apiweb/controller/sys/MenuController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="92" column="39" lean-forward="true" selection-start-line="92" selection-start-column="39" selection-end-line="92" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api-biz/src/main/java/com/moyu/core/user/service/LoginService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/apiweb/shiro/MyShiroRealm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="117" column="51" selection-start-line="117" selection-start-column="33" selection-end-line="117" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/apiweb/util/BaseResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="20" column="32" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/apiweb/controller/sys/UserManageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="817">
-          <caret line="63" column="15" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0.jar!/org/apache/shiro/subject/Subject.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="64" column="12" selection-start-line="64" selection-start-column="12" selection-end-line="64" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-web/1.4.0/shiro-web-1.4.0.jar!/org/apache/shiro/web/session/HttpServletSession.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="63" column="51" selection-start-line="63" selection-start-column="29" selection-end-line="63" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0.jar!/org/apache/shiro/session/Session.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/apiweb/controller/sys/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-276">
-          <caret line="59" column="44" selection-start-line="59" selection-start-column="44" selection-end-line="59" selection-end-column="44" />
-        </state>
-      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
   </component>
   <component name="masterDetails">
@@ -1457,7 +1444,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>No facets are configured</last-edited>
+          <last-edited>Spring</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1469,6 +1456,7 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
+          <last-edited>Python 3.7 interpreter library</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1492,12 +1480,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>api-tools</last-edited>
+          <last-edited>api-web</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

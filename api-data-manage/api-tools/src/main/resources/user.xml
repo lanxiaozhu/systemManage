@@ -44,7 +44,7 @@
 
 
 
-        <table tableName="moyu_user" domainObjectName="MyUser" alias="moyu_user">
+      <!--  <table tableName="moyu_user" domainObjectName="MyUser" alias="moyu_user">
             <property name="useActualColumnNames" value="false" />
             <generatedKey column="id" sqlStatement="MySql" identity="true" />
         </table>
@@ -67,7 +67,13 @@
         <table tableName="moyu_role_menu_relation" domainObjectName="MyRoleMenuRelation" alias="moyu_role_menu_relation">
             <property name="useActualColumnNames" value="false" />
             <generatedKey column="id" sqlStatement="MySql" identity="true" />
+        </table>-->
+
+        <table tableName="moyu_house_info" domainObjectName="MoyuHouseInfo" alias="moyu_house_info">
+            <property name="useActualColumnNames" value="false" />
+            <generatedKey column="id" sqlStatement="MySql" identity="true" />
         </table>
+
 
     </context>
 </generatorConfiguration>

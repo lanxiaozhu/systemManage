@@ -1,6 +1,6 @@
 <template>
   <div class="menu">
-    <el-table :data="tableData" style="width: 100%" height="660">
+    <el-table :data="tableData" style="width: 100%" height="650">
       <!--	<el-table-column prop="id" label="ID" ></el-table-column> -->
       <TableTreeColumn prop="menuName" treeKey="id" label="菜单名称"></TableTreeColumn>
       <el-table-column label="图标">

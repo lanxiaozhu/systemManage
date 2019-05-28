@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.moyu.core.user.dao.mapper.MyUserMapper">
   <resultMap id="BaseResultMap" type="com.moyu.core.user.domain.MyUser">
-    <result column="moyu_user_id" jdbcType="INTEGER" property="id" />
+    <id column="moyu_user_id" jdbcType="INTEGER" property="id" />
     <result column="moyu_user_login_name" jdbcType="VARCHAR" property="loginName" />
     <result column="moyu_user_password" jdbcType="VARCHAR" property="password" />
     <result column="moyu_user_real_name" jdbcType="VARCHAR" property="realName" />
@@ -94,6 +94,16 @@
       order by ${orderByClause}
     </if>
   </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from moyu_user moyu_user
+    where moyu_user.id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from moyu_user
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
   <delete id="deleteByExample" parameterType="com.moyu.core.user.domain.MyUserExample">
     delete from moyu_user moyu_user
     <if test="_parameter != null">
@@ -256,5 +266,59 @@
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
     </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.moyu.core.user.domain.MyUser">
+    update moyu_user
+    <set>
+      <if test="loginName != null">
+        login_name = #{loginName,jdbcType=VARCHAR},
+      </if>
+      <if test="password != null">
+        password = #{password,jdbcType=VARCHAR},
+      </if>
+      <if test="realName != null">
+        real_name = #{realName,jdbcType=VARCHAR},
+      </if>
+      <if test="phoneNo != null">
+        phone_no = #{phoneNo,jdbcType=VARCHAR},
+      </if>
+      <if test="lockAccount != null">
+        lock_account = #{lockAccount,jdbcType=INTEGER},
+      </if>
+      <if test="salt != null">
+        salt = #{salt,jdbcType=VARCHAR},
+      </if>
+      <if test="address != null">
+        address = #{address,jdbcType=VARCHAR},
+      </if>
+      <if test="state != null">
+        state = #{state,jdbcType=INTEGER},
+      </if>
+      <if test="isDel != null">
+        is_del = #{isDel,jdbcType=INTEGER},
+      </if>
+      <if test="gtmCreated != null">
+        gtm_created = #{gtmCreated,jdbcType=TIMESTAMP},
+      </if>
+      <if test="modifyCreated != null">
+        modify_created = #{modifyCreated,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.moyu.core.user.domain.MyUser">
+    update moyu_user
+    set login_name = #{loginName,jdbcType=VARCHAR},
+      password = #{password,jdbcType=VARCHAR},
+      real_name = #{realName,jdbcType=VARCHAR},
+      phone_no = #{phoneNo,jdbcType=VARCHAR},
+      lock_account = #{lockAccount,jdbcType=INTEGER},
+      salt = #{salt,jdbcType=VARCHAR},
+      address = #{address,jdbcType=VARCHAR},
+      state = #{state,jdbcType=INTEGER},
+      is_del = #{isDel,jdbcType=INTEGER},
+      gtm_created = #{gtmCreated,jdbcType=TIMESTAMP},
+      modify_created = #{modifyCreated,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=INTEGER}
   </update>
 </mapper>

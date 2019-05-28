@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.moyu.core.user.dao.mapper.MyRoleMapper">
   <resultMap id="BaseResultMap" type="com.moyu.core.user.domain.MyRole">
-    <result column="moyu_role_id" jdbcType="INTEGER" property="id" />
+    <id column="moyu_role_id" jdbcType="INTEGER" property="id" />
     <result column="moyu_role_role_name" jdbcType="VARCHAR" property="roleName" />
     <result column="moyu_role_description" jdbcType="VARCHAR" property="description" />
     <result column="moyu_role_is_del" jdbcType="INTEGER" property="isDel" />
@@ -84,6 +84,16 @@
       order by ${orderByClause}
     </if>
   </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from moyu_role moyu_role
+    where moyu_role.id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from moyu_role
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
   <delete id="deleteByExample" parameterType="com.moyu.core.user.domain.MyRoleExample">
     delete from moyu_role moyu_role
     <if test="_parameter != null">
@@ -172,5 +182,31 @@
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
     </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.moyu.core.user.domain.MyRole">
+    update moyu_role
+    <set>
+      <if test="roleName != null">
+        role_name = #{roleName,jdbcType=VARCHAR},
+      </if>
+      <if test="description != null">
+        description = #{description,jdbcType=VARCHAR},
+      </if>
+      <if test="isDel != null">
+        is_del = #{isDel,jdbcType=INTEGER},
+      </if>
+      <if test="gtmCreated != null">
+        gtm_created = #{gtmCreated,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.moyu.core.user.domain.MyRole">
+    update moyu_role
+    set role_name = #{roleName,jdbcType=VARCHAR},
+      description = #{description,jdbcType=VARCHAR},
+      is_del = #{isDel,jdbcType=INTEGER},
+      gtm_created = #{gtmCreated,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=INTEGER}
   </update>
 </mapper>

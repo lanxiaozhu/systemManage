@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.moyu.crawler.beike.dao.mapper.MoyuHouseInfoMapper">
+  <resultMap id="BaseResultMap" type="com.moyu.crawler.beike.domian.MoyuHouseInfo">
+    <id column="moyu_house_info_id" jdbcType="INTEGER" property="id" />
+    <result column="moyu_house_info_house_title" jdbcType="VARCHAR" property="houseTitle" />
+    <result column="moyu_house_info_house_ext" jdbcType="VARCHAR" property="houseExt" />
+    <result column="moyu_house_info_house_file_path" jdbcType="VARCHAR" property="houseFilePath" />
+    <result column="moyu_house_info_house_sum_price" jdbcType="INTEGER" property="houseSumPrice" />
+    <result column="moyu_house_info_house_location" jdbcType="VARCHAR" property="houseLocation" />
+    <result column="moyu_house_info_house_floor_level" jdbcType="VARCHAR" property="houseFloorLevel" />
+    <result column="moyu_house_info_house_sum_level" jdbcType="INTEGER" property="houseSumLevel" />
+    <result column="moyu_house_info_house_create_time" jdbcType="VARCHAR" property="houseCreateTime" />
+    <result column="moyu_house_info_house_layout" jdbcType="VARCHAR" property="houseLayout" />
+    <result column="moyu_house_info_house_measure" jdbcType="DECIMAL" property="houseMeasure" />
+    <result column="moyu_house_info_house_orientation" jdbcType="VARCHAR" property="houseOrientation" />
+    <result column="moyu_house_info_house_price" jdbcType="DECIMAL" property="housePrice" />
+    <result column="moyu_house_info_house_star" jdbcType="INTEGER" property="houseStar" />
+    <result column="moyu_house_info_house_publish" jdbcType="INTEGER" property="housePublish" />
+    <result column="moyu_house_info_house_taxfree" jdbcType="VARCHAR" property="houseTaxfree" />
+    <result column="moyu_house_info_house_subway" jdbcType="INTEGER" property="houseSubway" />
+    <result column="moyu_house_info_house_link" jdbcType="VARCHAR" property="houseLink" />
+    <result column="moyu_house_info_house_origin" jdbcType="INTEGER" property="houseOrigin" />
+    <result column="moyu_house_info_is_del" jdbcType="INTEGER" property="isDel" />
+    <result column="moyu_house_info_gtm_created" jdbcType="TIMESTAMP" property="gtmCreated" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    moyu_house_info.id as moyu_house_info_id, moyu_house_info.house_title as moyu_house_info_house_title, 
+    moyu_house_info.house_ext as moyu_house_info_house_ext, moyu_house_info.house_file_path as moyu_house_info_house_file_path, 
+    moyu_house_info.house_sum_price as moyu_house_info_house_sum_price, moyu_house_info.house_location as moyu_house_info_house_location, 
+    moyu_house_info.house_floor_level as moyu_house_info_house_floor_level, moyu_house_info.house_sum_level as moyu_house_info_house_sum_level, 
+    moyu_house_info.house_create_time as moyu_house_info_house_create_time, moyu_house_info.house_layout as moyu_house_info_house_layout, 
+    moyu_house_info.house_measure as moyu_house_info_house_measure, moyu_house_info.house_orientation as moyu_house_info_house_orientation, 
+    moyu_house_info.house_price as moyu_house_info_house_price, moyu_house_info.house_star as moyu_house_info_house_star, 
+    moyu_house_info.house_publish as moyu_house_info_house_publish, moyu_house_info.house_taxfree as moyu_house_info_house_taxfree, 
+    moyu_house_info.house_subway as moyu_house_info_house_subway, moyu_house_info.house_link as moyu_house_info_house_link, 
+    moyu_house_info.house_origin as moyu_house_info_house_origin, moyu_house_info.is_del as moyu_house_info_is_del, 
+    moyu_house_info.gtm_created as moyu_house_info_gtm_created
+  </sql>
+  <select id="selectByExample" parameterType="com.moyu.crawler.beike.domian.MoyuHouseInfoExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from moyu_house_info moyu_house_info
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from moyu_house_info moyu_house_info
+    where moyu_house_info.id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from moyu_house_info
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.moyu.crawler.beike.domian.MoyuHouseInfoExample">
+    delete from moyu_house_info moyu_house_info
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.moyu.crawler.beike.domian.MoyuHouseInfo">
+    <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Integer">
+      SELECT LAST_INSERT_ID()
+    </selectKey>
+    insert into moyu_house_info (house_title, house_ext, house_file_path, 
+      house_sum_price, house_location, house_floor_level, 
+      house_sum_level, house_create_time, house_layout, 
+      house_measure, house_orientation, house_price, 
+      house_star, house_publish, house_taxfree, 
+      house_subway, house_link, house_origin, 
+      is_del, gtm_created)
+    values (#{houseTitle,jdbcType=VARCHAR}, #{houseExt,jdbcType=VARCHAR}, #{houseFilePath,jdbcType=VARCHAR}, 
+      #{houseSumPrice,jdbcType=INTEGER}, #{houseLocation,jdbcType=VARCHAR}, #{houseFloorLevel,jdbcType=VARCHAR}, 
+      #{houseSumLevel,jdbcType=INTEGER}, #{houseCreateTime,jdbcType=VARCHAR}, #{houseLayout,jdbcType=VARCHAR}, 
+      #{houseMeasure,jdbcType=DECIMAL}, #{houseOrientation,jdbcType=VARCHAR}, #{housePrice,jdbcType=DECIMAL}, 
+      #{houseStar,jdbcType=INTEGER}, #{housePublish,jdbcType=INTEGER}, #{houseTaxfree,jdbcType=VARCHAR}, 
+      #{houseSubway,jdbcType=INTEGER}, #{houseLink,jdbcType=VARCHAR}, #{houseOrigin,jdbcType=INTEGER}, 
+      #{isDel,jdbcType=INTEGER}, #{gtmCreated,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.moyu.crawler.beike.domian.MoyuHouseInfo">
+    <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Integer">
+      SELECT LAST_INSERT_ID()
+    </selectKey>
+    insert into moyu_house_info
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="houseTitle != null">
+        house_title,
+      </if>
+      <if test="houseExt != null">
+        house_ext,
+      </if>
+      <if test="houseFilePath != null">
+        house_file_path,
+      </if>
+      <if test="houseSumPrice != null">
+        house_sum_price,
+      </if>
+      <if test="houseLocation != null">
+        house_location,
+      </if>
+      <if test="houseFloorLevel != null">
+        house_floor_level,
+      </if>
+      <if test="houseSumLevel != null">
+        house_sum_level,
+      </if>
+      <if test="houseCreateTime != null">
+        house_create_time,
+      </if>
+      <if test="houseLayout != null">
+        house_layout,
+      </if>
+      <if test="houseMeasure != null">
+        house_measure,
+      </if>
+      <if test="houseOrientation != null">
+        house_orientation,
+      </if>
+      <if test="housePrice != null">
+        house_price,
+      </if>
+      <if test="houseStar != null">
+        house_star,
+      </if>
+      <if test="housePublish != null">
+        house_publish,
+      </if>
+      <if test="houseTaxfree != null">
+        house_taxfree,
+      </if>
+      <if test="houseSubway != null">
+        house_subway,
+      </if>
+      <if test="houseLink != null">
+        house_link,
+      </if>
+      <if test="houseOrigin != null">
+        house_origin,
+      </if>
+      <if test="isDel != null">
+        is_del,
+      </if>
+      <if test="gtmCreated != null">
+        gtm_created,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="houseTitle != null">
+        #{houseTitle,jdbcType=VARCHAR},
+      </if>
+      <if test="houseExt != null">
+        #{houseExt,jdbcType=VARCHAR},
+      </if>
+      <if test="houseFilePath != null">
+        #{houseFilePath,jdbcType=VARCHAR},
+      </if>
+      <if test="houseSumPrice != null">
+        #{houseSumPrice,jdbcType=INTEGER},
+      </if>
+      <if test="houseLocation != null">
+        #{houseLocation,jdbcType=VARCHAR},
+      </if>
+      <if test="houseFloorLevel != null">
+        #{houseFloorLevel,jdbcType=VARCHAR},
+      </if>
+      <if test="houseSumLevel != null">
+        #{houseSumLevel,jdbcType=INTEGER},
+      </if>
+      <if test="houseCreateTime != null">
+        #{houseCreateTime,jdbcType=VARCHAR},
+      </if>
+      <if test="houseLayout != null">
+        #{houseLayout,jdbcType=VARCHAR},
+      </if>
+      <if test="houseMeasure != null">
+        #{houseMeasure,jdbcType=DECIMAL},
+      </if>
+      <if test="houseOrientation != null">
+        #{houseOrientation,jdbcType=VARCHAR},
+      </if>
+      <if test="housePrice != null">
+        #{housePrice,jdbcType=DECIMAL},
+      </if>
+      <if test="houseStar != null">
+        #{houseStar,jdbcType=INTEGER},
+      </if>
+      <if test="housePublish != null">
+        #{housePublish,jdbcType=INTEGER},
+      </if>
+      <if test="houseTaxfree != null">
+        #{houseTaxfree,jdbcType=VARCHAR},
+      </if>
+      <if test="houseSubway != null">
+        #{houseSubway,jdbcType=INTEGER},
+      </if>
+      <if test="houseLink != null">
+        #{houseLink,jdbcType=VARCHAR},
+      </if>
+      <if test="houseOrigin != null">
+        #{houseOrigin,jdbcType=INTEGER},
+      </if>
+      <if test="isDel != null">
+        #{isDel,jdbcType=INTEGER},
+      </if>
+      <if test="gtmCreated != null">
+        #{gtmCreated,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.moyu.crawler.beike.domian.MoyuHouseInfoExample" resultType="java.lang.Long">
+    select count(*) from moyu_house_info moyu_house_info
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update moyu_house_info moyu_house_info
+    <set>
+      <if test="record.id != null">
+        moyu_house_info.id = #{record.id,jdbcType=INTEGER},
+      </if>
+      <if test="record.houseTitle != null">
+        moyu_house_info.house_title = #{record.houseTitle,jdbcType=VARCHAR},
+      </if>
+      <if test="record.houseExt != null">
+        moyu_house_info.house_ext = #{record.houseExt,jdbcType=VARCHAR},
+      </if>
+      <if test="record.houseFilePath != null">
+        moyu_house_info.house_file_path = #{record.houseFilePath,jdbcType=VARCHAR},
+      </if>
+      <if test="record.houseSumPrice != null">
+        moyu_house_info.house_sum_price = #{record.houseSumPrice,jdbcType=INTEGER},
+      </if>
+      <if test="record.houseLocation != null">
+        moyu_house_info.house_location = #{record.houseLocation,jdbcType=VARCHAR},
+      </if>
+      <if test="record.houseFloorLevel != null">
+        moyu_house_info.house_floor_level = #{record.houseFloorLevel,jdbcType=VARCHAR},
+      </if>
+      <if test="record.houseSumLevel != null">
+        moyu_house_info.house_sum_level = #{record.houseSumLevel,jdbcType=INTEGER},
+      </if>
+      <if test="record.houseCreateTime != null">
+        moyu_house_info.house_create_time = #{record.houseCreateTime,jdbcType=VARCHAR},
+      </if>
+      <if test="record.houseLayout != null">
+        moyu_house_info.house_layout = #{record.houseLayout,jdbcType=VARCHAR},
+      </if>
+      <if test="record.houseMeasure != null">
+        moyu_house_info.house_measure = #{record.houseMeasure,jdbcType=DECIMAL},
+      </if>
+      <if test="record.houseOrientation != null">
+        moyu_house_info.house_orientation = #{record.houseOrientation,jdbcType=VARCHAR},
+      </if>
+      <if test="record.housePrice != null">
+        moyu_house_info.house_price = #{record.housePrice,jdbcType=DECIMAL},
+      </if>
+      <if test="record.houseStar != null">
+        moyu_house_info.house_star = #{record.houseStar,jdbcType=INTEGER},
+      </if>
+      <if test="record.housePublish != null">
+        moyu_house_info.house_publish = #{record.housePublish,jdbcType=INTEGER},
+      </if>
+      <if test="record.houseTaxfree != null">
+        moyu_house_info.house_taxfree = #{record.houseTaxfree,jdbcType=VARCHAR},
+      </if>
+      <if test="record.houseSubway != null">
+        moyu_house_info.house_subway = #{record.houseSubway,jdbcType=INTEGER},
+      </if>
+      <if test="record.houseLink != null">
+        moyu_house_info.house_link = #{record.houseLink,jdbcType=VARCHAR},
+      </if>
+      <if test="record.houseOrigin != null">
+        moyu_house_info.house_origin = #{record.houseOrigin,jdbcType=INTEGER},
+      </if>
+      <if test="record.isDel != null">
+        moyu_house_info.is_del = #{record.isDel,jdbcType=INTEGER},
+      </if>
+      <if test="record.gtmCreated != null">
+        moyu_house_info.gtm_created = #{record.gtmCreated,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update moyu_house_info moyu_house_info
+    set moyu_house_info.id = #{record.id,jdbcType=INTEGER},
+      moyu_house_info.house_title = #{record.houseTitle,jdbcType=VARCHAR},
+      moyu_house_info.house_ext = #{record.houseExt,jdbcType=VARCHAR},
+      moyu_house_info.house_file_path = #{record.houseFilePath,jdbcType=VARCHAR},
+      moyu_house_info.house_sum_price = #{record.houseSumPrice,jdbcType=INTEGER},
+      moyu_house_info.house_location = #{record.houseLocation,jdbcType=VARCHAR},
+      moyu_house_info.house_floor_level = #{record.houseFloorLevel,jdbcType=VARCHAR},
+      moyu_house_info.house_sum_level = #{record.houseSumLevel,jdbcType=INTEGER},
+      moyu_house_info.house_create_time = #{record.houseCreateTime,jdbcType=VARCHAR},
+      moyu_house_info.house_layout = #{record.houseLayout,jdbcType=VARCHAR},
+      moyu_house_info.house_measure = #{record.houseMeasure,jdbcType=DECIMAL},
+      moyu_house_info.house_orientation = #{record.houseOrientation,jdbcType=VARCHAR},
+      moyu_house_info.house_price = #{record.housePrice,jdbcType=DECIMAL},
+      moyu_house_info.house_star = #{record.houseStar,jdbcType=INTEGER},
+      moyu_house_info.house_publish = #{record.housePublish,jdbcType=INTEGER},
+      moyu_house_info.house_taxfree = #{record.houseTaxfree,jdbcType=VARCHAR},
+      moyu_house_info.house_subway = #{record.houseSubway,jdbcType=INTEGER},
+      moyu_house_info.house_link = #{record.houseLink,jdbcType=VARCHAR},
+      moyu_house_info.house_origin = #{record.houseOrigin,jdbcType=INTEGER},
+      moyu_house_info.is_del = #{record.isDel,jdbcType=INTEGER},
+      moyu_house_info.gtm_created = #{record.gtmCreated,jdbcType=TIMESTAMP}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.moyu.crawler.beike.domian.MoyuHouseInfo">
+    update moyu_house_info
+    <set>
+      <if test="houseTitle != null">
+        house_title = #{houseTitle,jdbcType=VARCHAR},
+      </if>
+      <if test="houseExt != null">
+        house_ext = #{houseExt,jdbcType=VARCHAR},
+      </if>
+      <if test="houseFilePath != null">
+        house_file_path = #{houseFilePath,jdbcType=VARCHAR},
+      </if>
+      <if test="houseSumPrice != null">
+        house_sum_price = #{houseSumPrice,jdbcType=INTEGER},
+      </if>
+      <if test="houseLocation != null">
+        house_location = #{houseLocation,jdbcType=VARCHAR},
+      </if>
+      <if test="houseFloorLevel != null">
+        house_floor_level = #{houseFloorLevel,jdbcType=VARCHAR},
+      </if>
+      <if test="houseSumLevel != null">
+        house_sum_level = #{houseSumLevel,jdbcType=INTEGER},
+      </if>
+      <if test="houseCreateTime != null">
+        house_create_time = #{houseCreateTime,jdbcType=VARCHAR},
+      </if>
+      <if test="houseLayout != null">
+        house_layout = #{houseLayout,jdbcType=VARCHAR},
+      </if>
+      <if test="houseMeasure != null">
+        house_measure = #{houseMeasure,jdbcType=DECIMAL},
+      </if>
+      <if test="houseOrientation != null">
+        house_orientation = #{houseOrientation,jdbcType=VARCHAR},
+      </if>
+      <if test="housePrice != null">
+        house_price = #{housePrice,jdbcType=DECIMAL},
+      </if>
+      <if test="houseStar != null">
+        house_star = #{houseStar,jdbcType=INTEGER},
+      </if>
+      <if test="housePublish != null">
+        house_publish = #{housePublish,jdbcType=INTEGER},
+      </if>
+      <if test="houseTaxfree != null">
+        house_taxfree = #{houseTaxfree,jdbcType=VARCHAR},
+      </if>
+      <if test="houseSubway != null">
+        house_subway = #{houseSubway,jdbcType=INTEGER},
+      </if>
+      <if test="houseLink != null">
+        house_link = #{houseLink,jdbcType=VARCHAR},
+      </if>
+      <if test="houseOrigin != null">
+        house_origin = #{houseOrigin,jdbcType=INTEGER},
+      </if>
+      <if test="isDel != null">
+        is_del = #{isDel,jdbcType=INTEGER},
+      </if>
+      <if test="gtmCreated != null">
+        gtm_created = #{gtmCreated,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.moyu.crawler.beike.domian.MoyuHouseInfo">
+    update moyu_house_info
+    set house_title = #{houseTitle,jdbcType=VARCHAR},
+      house_ext = #{houseExt,jdbcType=VARCHAR},
+      house_file_path = #{houseFilePath,jdbcType=VARCHAR},
+      house_sum_price = #{houseSumPrice,jdbcType=INTEGER},
+      house_location = #{houseLocation,jdbcType=VARCHAR},
+      house_floor_level = #{houseFloorLevel,jdbcType=VARCHAR},
+      house_sum_level = #{houseSumLevel,jdbcType=INTEGER},
+      house_create_time = #{houseCreateTime,jdbcType=VARCHAR},
+      house_layout = #{houseLayout,jdbcType=VARCHAR},
+      house_measure = #{houseMeasure,jdbcType=DECIMAL},
+      house_orientation = #{houseOrientation,jdbcType=VARCHAR},
+      house_price = #{housePrice,jdbcType=DECIMAL},
+      house_star = #{houseStar,jdbcType=INTEGER},
+      house_publish = #{housePublish,jdbcType=INTEGER},
+      house_taxfree = #{houseTaxfree,jdbcType=VARCHAR},
+      house_subway = #{houseSubway,jdbcType=INTEGER},
+      house_link = #{houseLink,jdbcType=VARCHAR},
+      house_origin = #{houseOrigin,jdbcType=INTEGER},
+      is_del = #{isDel,jdbcType=INTEGER},
+      gtm_created = #{gtmCreated,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>
