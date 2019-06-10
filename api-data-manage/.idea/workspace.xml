@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44227d1e-df00-44aa-9360-6f1695e083d3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-web/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api-web/src/main/resources/application.properties" afterDir="false" />
-    </list>
+    <list default="true" id="44227d1e-df00-44aa-9360-6f1695e083d3" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/api-web/target/" />
@@ -36,38 +31,7 @@
     <favorites_list name="api-data-manage" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/generatorCode.MD">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="266">
-                <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/ApiWebApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="98">
-              <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/api-web/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -208,7 +172,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-10" />
     <option name="y" value="-10" />
     <option name="width" value="1940" />
@@ -318,10 +282,10 @@
     <property name="SearchEverywhereHistoryKey" value="MyRoleMapper&#9;FILE&#9;file://D:/project/study/api-data-manage/api-biz/src/main/resources/com/moyu/core/user/dao/mapper/MyRoleMapper.xml&#10;MyMenuDao&#9;FILE&#9;file://D:/project/study/api-data-manage/api-biz/src/main/resources/com/moyu/core/user/dao/MyMenuDao.xml&#10;userManageController&#9;FILE&#9;file://D:/project/study/api-data-manage/api-web/src/main/java/com/moyu/apiweb/apiweb/controller/sys/UserManageController.java&#10;RequestPermissionFilter&#9;FILE&#9;file://D:/project/study/api-data-manage/api-web/src/main/java/com/moyu/apiweb/apiweb/interceptorRequest/RequestPermissionFilter.java&#10;MyMenuMapper&#9;FILE&#9;file://D:/project/study/api-data-manage/api-biz/src/main/resources/com/moyu/core/user/dao/mapper/MyMenuMapper.xml" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560173294701" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560173647472" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/apiweb/controller" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -639,7 +603,7 @@
       <workItem from="1558343156544" duration="11000" />
       <workItem from="1558576265066" duration="66000" />
       <workItem from="1558790057313" duration="35000" />
-      <workItem from="1560171859407" duration="1408000" />
+      <workItem from="1560171859407" duration="1782000" />
     </task>
     <servers />
   </component>
@@ -676,11 +640,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="437642000" />
+    <option name="totallyTimeSpent" value="438016000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1552" height="840" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="UI Designer" order="1" />
@@ -699,7 +662,7 @@
       <window_info anchor="bottom" id="Spring" order="6" weight="0.32797858" />
       <window_info anchor="bottom" id="Message" order="7" />
       <window_info anchor="bottom" id="Find" order="8" weight="0.32844576" />
-      <window_info anchor="bottom" id="Run" order="9" sideWeight="0.49865952" visible="true" weight="0.43926555" />
+      <window_info anchor="bottom" id="Run" order="9" sideWeight="0.49865952" weight="0.43926555" />
       <window_info anchor="bottom" id="Debug" order="10" sideWeight="0.49932975" weight="0.2857143" />
       <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
