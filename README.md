@@ -48,7 +48,9 @@ npm install -g cnpm --registry=https://registry.npm.taobao.org
 
 5.快捷键ctrl+j 打开终端命令行 逐行输入一下命令安装必须插件
 
-cnpm install 命令构建项目
+cnpm install 命令构建项目(从git 上面获取的项目，是需要再次编译的)  
+
+》》》》》》》》》》》》》》》》以下命令 如果 同学之前安装过 无需再次安装
 
 cnpm install --save axios   >>安装请求http 
 

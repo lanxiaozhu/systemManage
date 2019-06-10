@@ -1,15 +1,18 @@
 <template>
+<!-- element-UI 走马灯 -->
   <div class="page-container" style="width:99%;margin-top:15px;">
     <el-carousel :interval="3000" type="card" height="450px" class="carousel">
+      <!-- 第一页 -->
       <el-carousel-item class="carousel-item-intro">
         <h2>项目介绍</h2>
         <ul>
           <li>基于 Spring Boot、Spring Cloud、Vue、Element 的 Java EE 快速开发平台</li>
-          <li>旨在提供一套简洁易用的解决方案，帮助用户有效降低项目开发难度和成本</li>
           <li>我日找工作寒冬</li>
         </ul>
         <div><img src="@/assets/pyz.jpg" style="width:200px;height:120px;padding-top:15px;" /></div>
       </el-carousel-item>
+
+      <!-- 第一页 -->
       <el-carousel-item class="carousel-item-func">
         <h2>功能计划</h2>
         <ul>
@@ -22,6 +25,7 @@
           <li>...</li>
         </ul>
       </el-carousel-item>
+      <!-- 第一页 -->
       <el-carousel-item class="carousel-item-env">
         <h2>开发环境</h2>
         <ul>
