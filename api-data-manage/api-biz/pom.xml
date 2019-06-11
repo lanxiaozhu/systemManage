@@ -13,6 +13,11 @@
     <artifactId>api-biz</artifactId>
 
 <dependencies>
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-data-mongodb</artifactId>
+    </dependency>
+
     <!--依赖于数据切换  使用它(读写分离)-->
     <dependency>
         <groupId>com.moyu.api-data-manage</groupId>
