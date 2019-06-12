@@ -31,6 +31,47 @@ public class MBasicAttr<T> implements Serializable {
      */
     private Date addTime = getNow();
 
+    public static <T> MBasicAttr getInstance(T basic) throws IllegalAccessException, InstantiationException {//static <T>  将方法声明为 泛型方法
+        return  MBasicAttr.class.newInstance().rsThis(basic);
+    }
+    public MBasicAttr rsThis(T basic) {
+        this.basic = basic;
+        return this;
+    }
+
+
+    public String getUniqueId() {
+        return uniqueId;
+    }
+
+    public void setUniqueId(String uniqueId) {
+        this.uniqueId = uniqueId;
+    }
+
+    public Object getSourceData() {
+        return sourceData;
+    }
+
+    public void setSourceData(Object sourceData) {
+        this.sourceData = sourceData;
+    }
+
+    public T getBasic() {
+        return basic;
+    }
+
+    public void setBasic(T basic) {
+        this.basic = basic;
+    }
+
+    public Date getAddTime() {
+        return addTime;
+    }
+
+    public void setAddTime(Date addTime) {
+        this.addTime = addTime;
+    }
+
     /**
      * 获得当前日期
      *
