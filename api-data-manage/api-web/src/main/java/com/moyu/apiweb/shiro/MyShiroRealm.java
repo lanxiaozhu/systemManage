@@ -14,6 +14,7 @@ import org.apache.shiro.subject.PrincipalCollection;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Lazy;
 
 import java.util.List;
 
@@ -28,13 +29,13 @@ public class MyShiroRealm extends AuthorizingRealm {
 
     private final static Logger logger = LoggerFactory.getLogger(MyShiroRealm.class);
 
-
+    @Lazy
     @Autowired
     private LoginService loginService;
-
+    @Lazy
     @Autowired
     private UserRoleRelationService userRoleRelationService;
-
+    @Lazy
     @Autowired
     private RoleMenuRelationService roleMenuRelationService;
     /**

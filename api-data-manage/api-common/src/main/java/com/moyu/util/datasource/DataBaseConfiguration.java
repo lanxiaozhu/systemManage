@@ -49,41 +49,25 @@ public class DataBaseConfiguration {
     }
 
     /**
+     * Dynamic data source.
      *
-     *
-     * @Primary
-     Description:
-
-     Parameter 0 of method sqlSessionFactory in org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration required a single bean, but 3 were found:
-     - master: defined by method 'writeDataSource' in class path resource [com/moyu/util/datasource/DataBaseConfiguration.class]
-     - slave: defined by method 'readDataSourceOne' in class path resource [com/moyu/util/datasource/DataBaseConfiguration.class]
-     - roundRobinDataSouceProxy: defined by method 'roundRobinDataSouceProxy' in class path resource [com/moyu/util/datasource/DataBaseConfiguration.class]
-     Action:
-
-     Consider marking one of the beans as @Primary, updating the consumer to accept multiple beans, or using @Qualifier to identify the bean that should be consumed
-
-     * @return
+     * @return the data source
      */
     @Primary
     @Bean
     public AbstractRoutingDataSource roundRobinDataSouceProxy() {
-        DynamicDataSource proxy = new DynamicDataSource();
-        proxy.setDefaultTargetDataSource(writeDataSource());
+        DynamicDataSource routing = new DynamicDataSource();
+        //设置默认的目标数据库
+        routing.setDefaultTargetDataSource(writeDataSource());
 
 
         Map<Object, Object> targetDataSources = new HashMap<Object, Object>();
-        // DataSource writeDataSource = SpringContextHolder.getBean("writeDataSource");
-        // 写
         targetDataSources.put("master", writeDataSource());
         targetDataSources.put("slave", readDataSourceOne());
-        // targetDataSources.put(DataSourceType.read.getType(),readDataSource);
-        //多个读数据库时
-       /* for (int i = 0; i < size; i++) {
-            targetDataSources.put(i, readDataSources.get(i));
-        }*/
-        //设置默认
-        proxy.setTargetDataSources(targetDataSources);
-        return proxy;
+
+        //设置多数据源
+        routing.setTargetDataSources(targetDataSources);
+        return routing;
     }
 
     /**

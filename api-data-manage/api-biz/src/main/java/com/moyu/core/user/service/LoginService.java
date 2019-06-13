@@ -9,5 +9,5 @@ import com.moyu.core.user.domain.MyUser;
 public interface LoginService {
 
 
-    MyUser getUser(String loginName);
+    public MyUser getUser(String loginName);
 }

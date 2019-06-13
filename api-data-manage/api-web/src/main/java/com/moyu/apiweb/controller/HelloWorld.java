@@ -1,6 +1,13 @@
 package com.moyu.apiweb.controller;
 
+import com.moyu.core.user.domain.MyUser;
+import com.moyu.core.user.service.LoginService;
+import com.moyu.core.user.service.RoleMenuRelationService;
+import org.junit.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -9,17 +16,25 @@ import org.springframework.web.bind.annotation.RestController;
  * @Description:
  */
 @RestController
+@RequestMapping("/hello")
 public class HelloWorld {
 
+    @Autowired
+    private LoginService loginService;
 
-    @GetMapping("/hello")
-    public String helloWorld(){
-        return "helloWolrd";
+
+    @RequestMapping("/moyu")
+    public String testSwitch() {
+        MyUser moyu = loginService.getUser("moyu");
+
+        System.out.println(
+                moyu
+        );
+        return "ss";
     }
 
-
     // volatile关键字会强制的保证线程的可见性
-    private static  boolean flag = true;
+    private static boolean flag = true;
 
     private static void setI(boolean state) {
         System.out.println("线程设置了stop begin");

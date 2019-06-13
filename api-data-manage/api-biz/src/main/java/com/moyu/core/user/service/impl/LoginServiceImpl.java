@@ -18,7 +18,11 @@ public class LoginServiceImpl implements LoginService {
     @Resource
     private MyUserMapper myUserMapper;
 
-
+    /**
+     * 通过用户登陆名 查询 用户是否存在
+     * @param loginName
+     * @return
+     */
     @Override
     public MyUser getUser(String loginName) {
         if(StringUtils.isEmpty(loginName)){
@@ -30,7 +34,7 @@ public class LoginServiceImpl implements LoginService {
                 .andStateEqualTo(CommonConstant.STATE)
                 .andIsDelEqualTo(CommonConstant.IS_DEL);
         List<MyUser> myUsers = myUserMapper.selectByExample(example);
-        return (MyUser) ListUtil.getOne(myUsers);
+        return ListUtil.getOne(myUsers);
     }
 
 

@@ -5,6 +5,8 @@ import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
 /**
  * Service 及 ServiceImpl均需在com.moyu包下
@@ -25,32 +27,10 @@ import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
  */
 @SpringBootApplication(scanBasePackages="com.moyu",exclude = {DataSourceAutoConfiguration.class})
 @MapperScan("com.moyu.core.user.dao")//扫描Mapper
+@EnableAspectJAutoProxy(proxyTargetClass = true)
 public class ApiWebApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(ApiWebApplication.class, args);
     }
 }
-/**
-
-exclude = {DataSourceAutoConfiguration.class}
-
-Description:
-
-The dependencies of some of the beans in the application context form a cycle:
-
-   homeController (field private LoginService com.moyu.apiweb.apiweb.controller.sys.HomeController.loginService)
-      ↓
-   loginService (field private com.moyu.core.user.dao.mapper.UserMapper LoginServiceImpl.userMapper)
-      ↓
-   userMapper defined in file\
-      ↓
-   sqlSessionFactory defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]
-┌─────┐
-|  roundRobinDataSouceProxy defined in class path resource [com/moyu/util/datasource/DataBaseConfiguration.class]
-↑     ↓
-|  master defined in class path resource [com/moyu/util/datasource/DataBaseConfiguration.class]
-↑     ↓
-|  org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker
-└─────┘
- */

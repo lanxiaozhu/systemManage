@@ -10,13 +10,11 @@ import java.util.List;
 public class ListUtil {
     /**
      * List 仅取一条
+     *
      * @param list
      * @return
      */
-    public static Object getOne(List list){
-        if(list.isEmpty()){
-            return null;
-        }
-        return list.get(0);
+    public static <T> T getOne(List<T> list) {
+        return list.isEmpty() ? null : list.get(0);
     }
 }

@@ -48,7 +48,9 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+
         <!--内嵌tomcat：设置为provided是在打包时会将该包(依赖)排除，因为要放到独立的tomcat中运行，Spring Boot内嵌的Tomcat是不需要用到的。-->
+        <!--部署成war包时开启↓↓↓↓-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-tomcat</artifactId>
@@ -70,6 +72,7 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-aop</artifactId>
         </dependency>
+
 
         <!-- https://mvnrepository.com/artifact/com.alibaba/druid-spring-boot-starter -->
         <dependency>
@@ -142,12 +145,6 @@
                 <version>${pagehelper-springboot.version}</version>
             </dependency>
             <!--分页插件 end-->
-            <!-- HTTP 客户端-->
-            <!--<dependency>
-                <groupId>com.squareup.okhttp3</groupId>
-                <artifactId>okhttp</artifactId>
-                <version>${okhttp.version}</version>
-            </dependency>-->
 
             <!--爬虫解析器-->
             <dependency>

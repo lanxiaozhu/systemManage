@@ -86,7 +86,7 @@ public class ShiroConfig {
         Map<String, String> filterChainDefinitionMap = new LinkedHashMap<>();//LinkedHashMap 同样是一个HashMap,不过内部实现了 双向链表结构，可以保证顺序
         //2.退出登陆
         filterChainDefinitionMap.put("/login/logout", "anon");
-        filterChainDefinitionMap.put("/hello", "anon");
+        filterChainDefinitionMap.put("/hello/**", "anon");
         filterChainDefinitionMap.put("/api/**", "anon");
         //3.其他所有路径都会被拦截  authc
         filterChainDefinitionMap.put("/**", "authc");
