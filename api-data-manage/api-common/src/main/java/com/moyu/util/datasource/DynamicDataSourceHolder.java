@@ -7,7 +7,7 @@ package com.moyu.util.datasource;
  */
 public class DynamicDataSourceHolder {
     /* 主库 key*/
-    private static final String MASTER ="master";
+    public static final String MASTER ="master";
     /* 从库 key*/
     private static final String SLAVE = "slave";
 

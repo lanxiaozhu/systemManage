@@ -15,7 +15,7 @@ import moment from 'moment' //表格中的时间格式化
 Vue.use(ElementUI) /*引入elementUi */
 Vue.use(VueAxios,axios);
 //axios.defaults.baseURL = "http://192.168.1.21:8088/" ; // 关键步骤–填写后台请求统一的地址
-axios.defaults.baseURL = "http://192.168.0.102:8088/"; // 关键步骤–填写后台请求统一的地址
+axios.defaults.baseURL = "http://127.0.0.1:8088/"; // 关键步骤–填写后台请求统一的地址
 
 Vue.config.productionTip = false
 
