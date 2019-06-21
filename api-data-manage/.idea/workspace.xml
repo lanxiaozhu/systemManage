@@ -2,49 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44227d1e-df00-44aa-9360-6f1695e083d3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/api-common/src/main/java/com/moyu/util/MultipleData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-biz/src/main/java/com/moyu/core/mongoUtil/TestSaveDataToMongo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-biz/src/main/java/com/moyu/core/mongoUtil/TestUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-biz/src/main/java/com/moyu/core/mongoUtil/TestUser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-biz/src/main/java/com/moyu/core/user/dao/MyMenuDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-biz/src/main/java/com/moyu/core/user/dao/MyMenuDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-biz/src/main/java/com/moyu/core/user/dao/MyUserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-biz/src/main/java/com/moyu/core/user/dao/MyUserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-biz/src/main/java/com/moyu/core/user/dao/mapper/MyUserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-biz/src/main/java/com/moyu/core/user/dao/mapper/MyUserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-biz/src/main/java/com/moyu/core/user/service/UserRoleRelationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-biz/src/main/java/com/moyu/core/user/service/UserRoleRelationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-biz/src/main/java/com/moyu/core/user/service/impl/LoginServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-biz/src/main/java/com/moyu/core/user/service/impl/LoginServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-biz/src/main/java/com/moyu/core/user/service/impl/MenuServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-biz/src/main/java/com/moyu/core/user/service/impl/MenuServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-biz/src/main/java/com/moyu/core/user/service/impl/UserRoleRelationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-biz/src/main/java/com/moyu/core/user/service/impl/UserRoleRelationServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-biz/src/main/resources/com/moyu/core/user/dao/MyUserDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-biz/src/main/resources/com/moyu/core/user/dao/MyUserDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-biz/target/classes/com/moyu/core/user/dao/MyUserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/api-biz/target/classes/com/moyu/core/user/dao/MyUserDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-biz/target/classes/com/moyu/core/user/service/UserRoleRelationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/api-biz/target/classes/com/moyu/core/user/service/UserRoleRelationService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-biz/target/classes/com/moyu/core/user/service/impl/LoginServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/api-biz/target/classes/com/moyu/core/user/service/impl/LoginServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-biz/target/classes/com/moyu/core/user/service/impl/MenuServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/api-biz/target/classes/com/moyu/core/user/service/impl/MenuServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-biz/target/classes/com/moyu/core/user/service/impl/UserRoleRelationServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/api-biz/target/classes/com/moyu/core/user/service/impl/UserRoleRelationServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-common/src/main/java/com/moyu/util/ListUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-common/src/main/java/com/moyu/util/util/ListUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-common/src/main/java/com/moyu/util/StrinUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-common/src/main/java/com/moyu/util/util/StrinUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-common/src/main/java/com/moyu/util/WebUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-common/src/main/java/com/moyu/util/util/WebUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-common/src/main/java/com/moyu/util/aopIntercept/DataSourceIntercept.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-common/src/main/java/com/moyu/util/aopIntercept/DataSourceIntercept.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-common/src/main/java/com/moyu/util/datasource/DataBaseConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-common/src/main/java/com/moyu/util/datasource/DataBaseConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-common/src/main/java/com/moyu/util/datasource/DynamicDataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-common/src/main/java/com/moyu/util/datasource/DynamicDataSource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-common/src/main/java/com/moyu/util/datasource/DynamicDataSourceHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-common/src/main/java/com/moyu/util/datasource/DynamicDataSourceHolder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-common/target/classes/com/moyu/util/ListUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-common/target/classes/com/moyu/util/StrinUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-common/target/classes/com/moyu/util/WebUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-common/target/classes/com/moyu/util/aopIntercept/DataSourceIntercept.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-common/target/classes/com/moyu/util/datasource/DataBaseConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/api-common/target/classes/com/moyu/util/datasource/DataBaseConfiguration.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-common/target/classes/com/moyu/util/datasource/DynamicDataSource.class" beforeDir="false" afterPath="$PROJECT_DIR$/api-common/target/classes/com/moyu/util/datasource/DynamicDataSource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-common/target/classes/com/moyu/util/datasource/DynamicDataSourceHolder.class" beforeDir="false" afterPath="$PROJECT_DIR$/api-common/target/classes/com/moyu/util/datasource/DynamicDataSourceHolder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-tools/src/main/java/com/moyu/tools/genertor/MyCommentGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-tools/src/main/java/com/moyu/tools/genertor/MyCommentGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/ApiWebApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/ApiWebApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/controller/HelloWorld.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/controller/HelloWorld.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/controller/sys/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/controller/sys/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/controller/sys/UserRoleRelationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/controller/sys/UserRoleRelationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/interceptorRequest/RequestPermissionFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/interceptorRequest/RequestPermissionFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/shiro/MyShiroRealm.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/shiro/MyShiroRealm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-web/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api-web/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-web/src/test/java/com/moyu/apiweb/dataSourceSwitch/TestDataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-web/src/test/java/com/moyu/apiweb/dataSourceSwitch/TestDataSource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-web/src/test/java/com/moyu/apiweb/mongo/MongoTemp.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-web/src/test/java/com/moyu/apiweb/mongo/MongoTemp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/generatorCode.MD" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.MD" beforeDir="false" afterPath="$PROJECT_DIR$/readme.MD" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shrio.MD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-biz/src/main/java/com/moyu/core/mongoUtil/MBasicAttr.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-biz/src/main/java/com/moyu/core/mongoUtil/MBasicAttr.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -75,7 +36,30 @@
     <favorites_list name="api-data-manage" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/api-biz/src/main/java/com/moyu/core/mongoUtil/TestSaveDataToMongo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="13" column="28" lean-forward="true" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api-biz/src/main/java/com/moyu/core/mongoUtil/MBasicAttr.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="218">
+              <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
+              <folding>
+                <element signature="e#1208#1209#0" expanded="true" />
+                <element signature="e#1236#1237#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -91,7 +75,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>topN</find>
       <find>CrawlDatum</find>
       <find>checkState</find>
       <find>com.squareup.okhttp3</find>
@@ -121,6 +104,7 @@
       <find>addComment</find>
       <find>mybatis-generator-core</find>
       <find>typeAliases</find>
+      <find>getInstance</find>
     </findStrings>
     <replaceStrings>
       <replace>----------------------------------------</replace>
@@ -134,7 +118,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/apiweb/controller/HelloWorld.java" />
         <option value="$PROJECT_DIR$/api-web/src/test/java/com/moyu/apiweb/apiweb/TestAb.java" />
         <option value="$PROJECT_DIR$/api-web/src/test/java/com/moyu/apiweb/apiweb/Crawler.java" />
         <option value="$PROJECT_DIR$/api-web/src/test/java/com/moyu/apiweb/apiweb/webDriver.java" />
@@ -146,9 +129,7 @@
         <option value="$PROJECT_DIR$/api-tools/src/main/resources/user.xml" />
         <option value="$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/controller/sys/HouseController.java" />
         <option value="$PROJECT_DIR$/businessProcess.MD" />
-        <option value="$PROJECT_DIR$/api-biz/src/main/java/com/moyu/core/mongoUtil/TestUser.java" />
         <option value="$PROJECT_DIR$/api-web/src/test/java/com/moyu/apiweb/mongo/MongoTemp.java" />
-        <option value="$PROJECT_DIR$/api-biz/src/main/java/com/moyu/core/mongoUtil/MBasicAttr.java" />
         <option value="$PROJECT_DIR$/api-common/src/main/java/com/moyu/util/ListUtil.java" />
         <option value="$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/shiro/ShiroConfig.java" />
         <option value="$PROJECT_DIR$/api-common/src/main/java/com/moyu/util/aopIntercept/DataSourceIntercept.java" />
@@ -185,6 +166,9 @@
         <option value="$PROJECT_DIR$/api-web/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/ApiWebApplication.java" />
         <option value="$PROJECT_DIR$/readme.MD" />
+        <option value="$PROJECT_DIR$/api-biz/src/main/java/com/moyu/core/mongoUtil/MBasicAttr.java" />
+        <option value="$PROJECT_DIR$/api-biz/src/main/java/com/moyu/core/mongoUtil/TestUser.java" />
+        <option value="$PROJECT_DIR$/api-biz/src/main/java/com/moyu/core/mongoUtil/TestSaveDataToMongo.java" />
       </list>
     </option>
   </component>
@@ -219,10 +203,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1938" />
-    <option name="height" value="1048" />
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="1939" />
+    <option name="height" value="1049" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -234,9 +218,64 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="api-data-manage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api-data-manage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="api-data-manage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api-data-manage" type="462c0819:PsiDirectoryNode" />
+              <item name="api-biz" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="api-data-manage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api-data-manage" type="462c0819:PsiDirectoryNode" />
+              <item name="api-biz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="api-data-manage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api-data-manage" type="462c0819:PsiDirectoryNode" />
+              <item name="api-biz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="api-data-manage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api-data-manage" type="462c0819:PsiDirectoryNode" />
+              <item name="api-biz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="api-data-manage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api-data-manage" type="462c0819:PsiDirectoryNode" />
+              <item name="api-biz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="api-data-manage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="api-data-manage" type="462c0819:PsiDirectoryNode" />
+              <item name="api-biz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="mongoUtil" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -247,7 +286,7 @@
     <property name="SearchEverywhereHistoryKey" value="MyRoleMapper&#9;FILE&#9;file://D:/project/study/api-data-manage/api-biz/src/main/resources/com/moyu/core/user/dao/mapper/MyRoleMapper.xml&#10;MyMenuDao&#9;FILE&#9;file://D:/project/study/api-data-manage/api-biz/src/main/resources/com/moyu/core/user/dao/MyMenuDao.xml&#10;userManageController&#9;FILE&#9;file://D:/project/study/api-data-manage/api-web/src/main/java/com/moyu/apiweb/apiweb/controller/sys/UserManageController.java&#10;RequestPermissionFilter&#9;FILE&#9;file://D:/project/study/api-data-manage/api-web/src/main/java/com/moyu/apiweb/apiweb/interceptorRequest/RequestPermissionFilter.java&#10;MyMenuMapper&#9;FILE&#9;file://D:/project/study/api-data-manage/api-biz/src/main/resources/com/moyu/core/user/dao/mapper/MyMenuMapper.xml" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561128194967" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561131250977" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/api-web/src/main/java/com/moyu/apiweb/apiweb/controller" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
@@ -293,7 +332,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ApiWebApplication">
+  <component name="RunManager" selected="Application.TestSaveDataToMongo">
     <configuration name="DynamicDataSource" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.moyu.util.datasource.DynamicDataSource" />
       <module name="api-common" />
@@ -320,18 +359,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MongoTemp.tests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="api-web" />
+    <configuration name="TestSaveDataToMongo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.moyu.core.mongoUtil.TestSaveDataToMongo" />
+      <module name="api-biz" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.moyu.apiweb.mongo.*" />
+          <option name="PATTERN" value="com.moyu.core.mongoUtil.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.moyu.apiweb.mongo" />
-      <option name="MAIN_CLASS_NAME" value="com.moyu.apiweb.mongo.MongoTemp" />
-      <option name="METHOD_NAME" value="tests" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -395,18 +431,18 @@
     <list>
       <item itemvalue="Application.DynamicDataSource" />
       <item itemvalue="Application.HelloWorld" />
-      <item itemvalue="JUnit.MongoTemp.tests" />
       <item itemvalue="JUnit.TestDataSource.testSwitch" />
       <item itemvalue="Maven.runMaven" />
       <item itemvalue="Spring Boot.ApiWebApplication" />
+      <item itemvalue="Application.TestSaveDataToMongo" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestSaveDataToMongo" />
         <item itemvalue="Spring Boot.ApiWebApplication" />
         <item itemvalue="Application.HelloWorld" />
         <item itemvalue="Application.DynamicDataSource" />
         <item itemvalue="JUnit.TestDataSource.testSwitch" />
-        <item itemvalue="JUnit.MongoTemp.tests" />
       </list>
     </recent_temporary>
   </component>
@@ -587,6 +623,7 @@
       <workItem from="1561036661789" duration="243000" />
       <workItem from="1561097482222" duration="4647000" />
       <workItem from="1561126675643" duration="1527000" />
+      <workItem from="1561130641960" duration="576000" />
     </task>
     <task id="LOCAL-00001" summary="读写分离">
       <created>1560441058062</created>
@@ -631,10 +668,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="489622000" />
+    <option name="totallyTimeSpent" value="490198000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="UI Designer" order="1" />
@@ -642,14 +680,14 @@
       <window_info id="Capture Tool" order="3" />
       <window_info id="Web" order="4" side_tool="true" />
       <window_info id="Designer" order="5" />
-      <window_info active="true" content_ui="combo" id="Project" order="6" sideWeight="0.49853373" visible="true" weight="0.269437" />
+      <window_info content_ui="combo" id="Project" order="6" sideWeight="0.49853373" visible="true" weight="0.2727882" />
       <window_info id="Structure" order="7" weight="0.24865952" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.32719547" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.5013405" side_tool="true" weight="0.115983024" />
       <window_info anchor="bottom" id="Messages" order="2" weight="0.32212582" />
       <window_info anchor="bottom" id="Java Enterprise" order="3" weight="0.32931727" />
       <window_info anchor="bottom" id="Database Changes" order="4" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="5" weight="0.4220963" />
+      <window_info anchor="bottom" id="Version Control" order="5" weight="0.21104816" />
       <window_info anchor="bottom" id="Spring" order="6" weight="0.32797858" />
       <window_info anchor="bottom" id="Message" order="7" />
       <window_info anchor="bottom" id="Find" order="8" weight="0.32719547" />
@@ -1028,13 +1066,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/api-web/src/test/java/com/moyu/apiweb/dataSourceSwitch/TestDataSource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="24" column="43" lean-forward="true" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api-biz/src/main/java/com/moyu/core/user/service/impl/LoginServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
@@ -1144,16 +1175,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/generatorCode.MD">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="76">
-            <caret line="4" column="54" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="54" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/generatorCode.MD" />
     <entry file="file://$PROJECT_DIR$/api-tools/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
@@ -1162,14 +1184,7 @@
       </provider>
       <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/shrio.MD">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/shrio.MD" />
     <entry file="file://$PROJECT_DIR$/api-web/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="129">
@@ -1357,24 +1372,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api-biz/src/main/java/com/moyu/core/mongoUtil/TestUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api-biz/src/main/java/com/moyu/core/constant/CommonConstant.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api-biz/src/main/java/com/moyu/core/mongoUtil/MongodbUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="741">
-          <caret line="52" column="7" lean-forward="true" selection-start-line="52" selection-start-column="7" selection-end-line="52" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -1388,10 +1389,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/api-biz/src/main/java/com/moyu/core/mongoUtil/MongodbUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api-biz/src/main/java/com/moyu/core/mongoUtil/TestUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/api-biz/src/main/java/com/moyu/core/mongoUtil/MBasicAttr.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        <state relative-caret-position="218">
+          <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
+          <folding>
+            <element signature="e#1208#1209#0" expanded="true" />
+            <element signature="e#1236#1237#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api-biz/src/main/java/com/moyu/core/mongoUtil/TestSaveDataToMongo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="28" lean-forward="true" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
         </state>
       </provider>
     </entry>
