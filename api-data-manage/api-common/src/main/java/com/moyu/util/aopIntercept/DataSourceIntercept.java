@@ -1,12 +1,19 @@
 package com.moyu.util.aopIntercept;
 
+import com.moyu.util.MultipleData;
 import com.moyu.util.datasource.DynamicDataSourceHolder;
+import org.apache.commons.lang.StringUtils;
 import org.aspectj.lang.JoinPoint;
+import org.aspectj.lang.Signature;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
+import org.aspectj.lang.reflect.MethodSignature;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
+
+import java.lang.reflect.Method;
+import java.util.Objects;
 
 /**
  * @Auther: guoxianjun
@@ -19,76 +26,26 @@ public class DataSourceIntercept {
 
     private final static Logger logger = LoggerFactory.getLogger(DataSourceIntercept.class);
     private final static String PREFIX = "【DB切换拦截】";
-    private final static String DAO = "dao";
 
     //中期redis 中获取 或者 使用搜索引擎 模糊匹配关键字
     //后期图标展示 热词 定义方法名
-    String[] read = {"read", "search", "find", "get", "query", "select"};
-
-    /**
-     * 第一个* 返回值类型任意
-     * com.XX.XXX.XX 切入包名
-     * .. 表示当前包 及 子包
-     * 第二个* 类名称 ，* 代表所有类
-     * .find 代表某些方法名 ，可以写为 .* 即所有方法
-     * (..) 任何参数
-     */
-
+    String[] read = {"read", "search", "find", "get", "query", "select", "exist"};
 
     /**
      * 拦截所有dao 层操作，包含 查询的方法名 全部切换到只读库
-     *
-     * @param joinPoint
      */
-    @Before("execution(* com.moyu.core..*.*(..)) ")
+    @Before("execution(* com.moyu.core..*.dao..*(..)) ")
     public void setReadDataSourceType(JoinPoint joinPoint) {
-        if (joinPoint.getSignature().getDeclaringTypeName().contains(DAO)) {
-            classInfo(joinPoint);
-        }
+        Method method = printIntercept(joinPoint);
+
+        if(judgeNullVal(joinPoint, method)) return;
+
+        readChannel(joinPoint);
     }
 
-
-//    @Before("execution(* com.moyu.core..*.find*(..)) " +
-//            "|| execution(* com.moyu.core..*.get*(..)) " +
-//            "|| execution(* com.moyu.core..*.query*(..)) " +
-//            "|| execution(* com.moyu.core..*.select*(..)) ")
-//    public void setReadDataSourceType(JoinPoint joinPoint) {
-//        if (joinPoint.getSignature().getDeclaringTypeName().contains(DAO)) {
-//            classInfo(joinPoint);
-//            DynamicDataSourceHolder.setSlave();
-//            logger.info(PREFIX + "dataSource切换到：Read");
-//        }
-//    }
-//
-//    @Before("execution(* com.moyu.core..*.save*(..)) " +
-//            "|| execution(* com.moyu.core..*.insert*(..))"+
-//
-//            "|| execution(* com.moyu.core..*.delete*(..))"+
-//            "|| execution(* com.moyu.core..*.remove*(..))" +
-//
-//            "|| execution(* com.moyu.core..*.change*(..))" +
-//            "|| execution(* com.moyu.core..*.update*(..))" +
-//            "|| execution(* com.moyu.core..*.edit*(..))")
-//    public void setWriteDataSourceType(JoinPoint joinPoint) {
-//        if (joinPoint.getSignature().getDeclaringTypeName().contains(DAO)) {
-//            classInfo(joinPoint);
-//            DynamicDataSourceHolder.setMaster();
-//            logger.info(PREFIX + "dataSource切换到：write");
-//        }
-//    }
-
-    private void classInfo(JoinPoint joinPoint) {
-
-        /**/
-        printIntercept(joinPoint);
-        boolean switchStats = false;
-        for (String str : read) {
-            if (joinPoint.getSignature().getName().contains(str)) {
-                switchStats=true;
-            }
-        }
-
-
+    private void readChannel(JoinPoint joinPoint) {
+        boolean switchStats = isReader(joinPoint.getSignature().getName());
+        //符合只读库路由标准
         if (switchStats) {
             DynamicDataSourceHolder.setSlave();
             logger.info(PREFIX + "dataSource切换到：Read");
@@ -96,22 +53,72 @@ public class DataSourceIntercept {
             DynamicDataSourceHolder.setMaster();
             logger.info(PREFIX + "dataSource切换到：write");
         }
-
-
     }
 
+    //字符串是否以XXX开头
+    private boolean isReader(String methodName) {
+        return StringUtils.startsWithAny(methodName, read);
+    }
 
-    private void printIntercept(JoinPoint joinPoint) {
-        System.out.println("intercept Method:" + joinPoint.getSignature().getName());
-        System.out.println("intercept SimpleClassName:" + joinPoint.getSignature().getDeclaringType().getSimpleName());
-        System.out.println("intercept ClassPathName:" + joinPoint.getSignature().getDeclaringTypeName());
+    /**
+     * 空值判断
+     *
+     * @param joinPoint
+     * @param method
+     */
+    private boolean judgeNullVal(JoinPoint joinPoint, Method method) {
+        //1-判断 对象不能为空
+        if (method == null) return false;
+
+        //2-判断 注解是否存在
+        if (!method.isAnnotationPresent(MultipleData.class)) return false;
+
+        Object[] params = joinPoint.getArgs();
+        Object param = params[0];
+        if (Objects.isNull(param)) return false;
+
+        return switchDataSource(param);
+    }
+
+    /**
+     * 数据源切换
+     *
+     * @param param
+     * @return
+     */
+    private boolean switchDataSource(Object param) {
+        if (param instanceof String) {
+            String dbName = param.toString();
+            if (DynamicDataSourceHolder.containDataSourceKey(dbName) && !dbName.equals(DynamicDataSourceHolder.getDataSourceKey())) {
+                DynamicDataSourceHolder.setX(dbName);
+                logger.info("切换到多数据源:" , dbName);
+                return true;
+            }
+        }
+        return false;
+    }
+
+    /**
+     * 输出本次拦截信息
+     *
+     * @param joinPoint
+     * @return
+     */
+    private Method printIntercept(JoinPoint joinPoint) {
+        logger.info("intercept Method:" , joinPoint.getSignature().getName());
+        logger.info("intercept SimpleClassName:" , joinPoint.getSignature().getDeclaringType().getSimpleName());
+        logger.info("intercept ClassPathName:" , joinPoint.getSignature().getDeclaringTypeName());
         //获取传入目标方法的参数
         Object[] args = joinPoint.getArgs();
         for (int i = 0; i < args.length; i++) {
-            System.out.println("第" + (i + 1) + "个参数为:" + args[i]);
+            logger.info("第" + (i + 1) + "个参数为:" + args[i]);
         }
-        System.out.println("被代理的对象:" + joinPoint.getTarget());
-        System.out.println("代理对象自己:" + joinPoint.getThis());
+        logger.info("被代理的对象:" , joinPoint.getTarget());
+        logger.info("代理对象自己:" , joinPoint.getThis());
 
+        Signature signature = joinPoint.getSignature();
+        MethodSignature methodSignature = (MethodSignature) signature;
+        Method method = methodSignature.getMethod();
+        return method;
     }
 }

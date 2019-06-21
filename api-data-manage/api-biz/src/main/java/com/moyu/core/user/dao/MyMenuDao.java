@@ -2,6 +2,7 @@ package com.moyu.core.user.dao;
 
 import com.moyu.core.user.domain.MyMenu;
 import com.moyu.core.user.model.MyMenuModel;
+import com.moyu.util.MultipleData;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;

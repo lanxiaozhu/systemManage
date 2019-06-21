@@ -53,7 +53,7 @@ public class MyShiroRealm extends AuthorizingRealm {
         MyUser userInfo = (MyUser) principalCollection.getPrimaryPrincipal();
 
         //1、获取角色信息
-        List<MyRole> myRoles = userRoleRelationService.selectdRole(userInfo.getId());
+        List<MyRole> myRoles = userRoleRelationService.selectdRole(null, userInfo.getId());
         for (MyRole role: myRoles) {
             //1.1授权 authorization 添加角色名称集合
             authorizationInfo.addRole(role.getRoleName());

@@ -2,11 +2,9 @@ package com.moyu.core.user.service.impl;
 
 import com.alibaba.fastjson.JSONArray;
 import com.moyu.core.user.dao.MyUserDao;
-import com.moyu.core.user.dao.mapper.MyRoleMapper;
 import com.moyu.core.user.dao.mapper.MyUserRoleRelationMapper;
 import com.moyu.core.user.domain.MyRole;
 import com.moyu.core.user.domain.MyUserRoleRelation;
-import com.moyu.core.user.domain.MyUserRoleRelationExample;
 import com.moyu.core.user.service.UserRoleRelationService;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.stereotype.Service;
@@ -46,9 +44,9 @@ public class UserRoleRelationServiceImpl implements UserRoleRelationService {
     }
 
     @Override
-    public List<MyRole> selectdRole(Integer userId) {
+    public List<MyRole> selectdRole(String dbName, Integer userId) {
         if(Objects.nonNull(userId)){
-            return myUserDao.selectdRole(userId);
+            return myUserDao.selectdRole(dbName,userId);
         }
         return null;
     }

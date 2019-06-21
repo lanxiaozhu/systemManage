@@ -27,7 +27,6 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
  */
 @SpringBootApplication(scanBasePackages="com.moyu",exclude = {DataSourceAutoConfiguration.class})
 @MapperScan("com.moyu.core.user.dao")//扫描Mapper
-@EnableAspectJAutoProxy(proxyTargetClass = true)
 public class ApiWebApplication {
 
     public static void main(String[] args) {

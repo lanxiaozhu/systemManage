@@ -15,6 +15,9 @@ import java.util.Properties;
 
 import static org.mybatis.generator.internal.util.StringUtility.isTrue;
 
+/**
+ * 自定义 注释生成
+ */
 public class MyCommentGenerator implements CommentGenerator {
 
 	/** 配置信息 */

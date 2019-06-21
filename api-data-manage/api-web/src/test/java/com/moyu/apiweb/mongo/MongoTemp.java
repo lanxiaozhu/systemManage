@@ -1,8 +1,6 @@
 package com.moyu.apiweb.mongo;
 
 import com.moyu.core.mongoUtil.MBasicAttr;
-import com.moyu.core.mongoUtil.MongodbUtils;
-import com.moyu.core.mongoUtil.TestUser;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -35,7 +35,7 @@ public class UserRoleRelationController extends BaseResponse {
      */
     @GetMapping("/userRoleRelation")
     public String userRoleRelation(Integer userId){
-        List<MyRole> seletedRolle = userRoleRelationService.selectdRole(userId);
+        List<MyRole> seletedRolle = userRoleRelationService.selectdRole(null, userId);
         return successJsonResult(seletedRolle);
     }
 

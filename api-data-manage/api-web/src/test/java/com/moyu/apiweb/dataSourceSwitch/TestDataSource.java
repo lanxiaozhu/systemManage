@@ -22,7 +22,7 @@ public class TestDataSource {
     private LoginService loginService;
     @Test
     public void testSwitch(){
-        MyUser moyu = loginService.getUser("moyu");
+        MyUser moyu = loginService.getUser( "moyu");
 
         System.out.println(
                 moyu

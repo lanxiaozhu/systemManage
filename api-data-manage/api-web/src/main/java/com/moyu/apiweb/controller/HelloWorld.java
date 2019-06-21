@@ -1,14 +1,19 @@
 package com.moyu.apiweb.controller;
 
+import com.alibaba.druid.pool.DruidDataSourceFactory;
+import com.moyu.core.user.domain.MyRole;
 import com.moyu.core.user.domain.MyUser;
 import com.moyu.core.user.service.LoginService;
-import com.moyu.core.user.service.RoleMenuRelationService;
-import org.junit.Test;
+import com.moyu.core.user.service.UserRoleRelationService;
+import com.moyu.util.datasource.DynamicDataSource;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Lazy;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.core.env.Environment;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 /**
  * @Auther: wishm
@@ -20,13 +25,43 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloWorld {
 
     @Autowired
-    private LoginService loginService;
+    private UserRoleRelationService userRoleRelationService;
 
+    @Autowired
+    private Environment env;
 
-    @RequestMapping("/moyu")
-    public String testSwitch() {
-        MyUser moyu = loginService.getUser("moyu");
+    @Autowired
+    private DynamicDataSource dynamicDataSource;
 
+    /**
+     * 添加数据源示例
+     * 多数据源的配置表
+     * @return
+     */
+    @GetMapping("/add_data_source")
+    public Object addDataSource() {
+        // 构建 DataSource 属性,
+        Map<String, String> map = new HashMap<>();
+        map.put(DruidDataSourceFactory.PROP_DRIVERCLASSNAME,
+                env.getRequiredProperty("datasource.dbx.driverClassName"));
+        map.put(DruidDataSourceFactory.PROP_URL,
+                env.getRequiredProperty("datasource.dbx.url"));
+        map.put(DruidDataSourceFactory.PROP_USERNAME,
+                env.getRequiredProperty("datasource.dbx.username"));
+        map.put(DruidDataSourceFactory.PROP_PASSWORD,
+                env.getRequiredProperty("datasource.dbx.password"));
+        map.put("database", "dynamic_db2");
+        System.out.println("添加数据源："+dynamicDataSource.addDataSource(map));
+        Set<Object> objects = DynamicDataSource.targetDataSources.keySet();
+        objects.forEach(tab -> System.out.println(tab));
+
+        return true;
+    }
+    //测试是否切换了数据源
+    //切换 使用 查询渠道 queryChannel 例如 美期mq  迅喵xm 相对应的数据源名称
+    @RequestMapping("/moyu/{dbName}")
+    public String testSwitch(@PathVariable(name = "dbName") String dbName) {
+        List<MyRole> moyu = userRoleRelationService.selectdRole(dbName,1);
         System.out.println(
                 moyu
         );

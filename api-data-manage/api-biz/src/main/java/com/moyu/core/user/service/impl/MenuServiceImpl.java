@@ -48,7 +48,7 @@ public class MenuServiceImpl implements MenuService {
             return models;
         }
         //显示的设置权限和角色，避免下次再去数据库获取，提高效率
-        List<MyRole> myRoles = userRoleRelationService.selectdRole(userId);
+        List<MyRole> myRoles = userRoleRelationService.selectdRole(null, userId);
         for (MyRole role : myRoles) {
 
             List<MyMenu> myMenus = roleMenuRelationService.selectdMenu(role.getId());

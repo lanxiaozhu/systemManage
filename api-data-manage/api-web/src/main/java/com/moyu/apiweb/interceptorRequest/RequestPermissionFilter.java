@@ -47,7 +47,7 @@ public class RequestPermissionFilter extends FormAuthenticationFilter {
     @Override
     protected boolean onAccessDenied(ServletRequest request, ServletResponse response) throws Exception {
         HttpServletRequest req = (HttpServletRequest) request;
-        logger.info("拦截未登录的请求-->");
+        logger.info("拦截未登录的请求-->"+req.getMethod());
         JSONObject jsonObject = new JSONObject();
         jsonObject.put("code", "401");
         jsonObject.put("msg", "登陆已过期,请重新登陆");

@@ -1,4 +1,4 @@
-package com.moyu.util;
+package com.moyu.util.util;
 
 import org.apache.commons.lang.StringUtils;
 

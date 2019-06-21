@@ -22,7 +22,7 @@ import java.util.Map;
 /**
  * @Auther: guoxianjun
  * @Date: 2018/12/4 10:26
- * @Description: 注入主从
+ * @Description: 初始化启动  注入主从
  */
 @Configuration
 public class DataBaseConfiguration {
@@ -76,6 +76,7 @@ public class DataBaseConfiguration {
      */
     @Bean
     public PlatformTransactionManager transactionManager() {
+        logger.info(PREFIX + "-------------------- annotation transactional init ---------------------");
         return new DataSourceTransactionManager(roundRobinDataSouceProxy());
     }
 }

@@ -14,7 +14,7 @@ public interface UserRoleRelationService {
 
     Integer saveUserRoleRelation(JSONArray ids, Integer userId);
 
-    List<MyRole> selectdRole(Integer userId);
+    List<MyRole> selectdRole(String dbName, Integer userId);
 
     void putRoleRelation(JSONArray ids, Integer userId);
 }

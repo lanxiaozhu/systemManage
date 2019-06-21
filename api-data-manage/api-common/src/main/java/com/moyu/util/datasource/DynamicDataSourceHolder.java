@@ -11,6 +11,7 @@ public class DynamicDataSourceHolder {
     /* 从库 key*/
     private static final String SLAVE = "slave";
 
+
     //ThreadLocal 当前线程变量
     private static final ThreadLocal<String> threadLocalHolder = new ThreadLocal<String>();
     /**
@@ -36,19 +37,23 @@ public class DynamicDataSourceHolder {
     public static void setSlave() {
         putDataSourceKey(SLAVE);
     }
+
+    public static void setX(String dbName) {
+        putDataSourceKey(dbName);
+    }
     /**
      * 删除数据源
      */
-    /*public static void clearDataSourceKey() {
+    public static void clearDataSourceKey() {
         threadLocalHolder.remove();
-    }*/
+    }
 
     /**
      * 是否存在数据源
      * @param key
      * @return
      */
-   /* public static boolean containDataSourceKey(String key) {
-        return dataSourceKeys.contains(key);
-    }*/
+    public static boolean containDataSourceKey(String key) {
+        return DynamicDataSource.targetDataSources.containsKey(key);
+    }
 }
