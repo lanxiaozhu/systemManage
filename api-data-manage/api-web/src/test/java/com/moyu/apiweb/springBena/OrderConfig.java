@@ -11,12 +11,10 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class OrderConfig {
     //从上面的输出结果可以看到bean在javaConfig的显性配置下即用@Bean的注解的情况下bean的名字为其方法名。
-   /* @Bean(initMethod = "init",destroyMethod = "destory")
+    @Bean(initMethod = "init",destroyMethod = "destory")
     public Teacher get全局搜搜我(){
         return  new Teacher();
-    }*/
-
-
+    }
 
 
 }
